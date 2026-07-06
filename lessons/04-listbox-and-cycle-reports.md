@@ -50,4 +50,4 @@ Not necessarily. PW may not auto-open PDF at cycle end at all; check printer ins
 
 </details>
 
-**Labs:** [Lab 1](../labs/lab-01-extract-and-inspect-cab.md)
+**Labs:** [Lab 5 — SysWOW64 FM20](../labs/lab-05-syswow64-fm20.md) · [Lesson 5 — DLLs](../lessons/05-what-are-dlls.md)

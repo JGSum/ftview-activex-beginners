@@ -24,6 +24,7 @@ Built from real troubleshooting (Steris cycle reports, PDF printers, lab VM setu
 | [02](lessons/02-cab-files.md) | CAB archives — extract, copy, deploy |
 | [03](lessons/03-activex-in-factorytalk-view.md) | How View uses ActiveX on displays |
 | [04](lessons/04-listbox-and-cycle-reports.md) | ListBox vs PDF printer — two different jobs |
+| [05](lessons/05-what-are-dlls.md) | What DLLs are — CAB vs SysWOW64, today’s lab fix |
 
 ## Labs
 
@@ -33,6 +34,7 @@ Built from real troubleshooting (Steris cycle reports, PDF printers, lab VM setu
 | [Lab 2](labs/lab-02-map-the-deployment-path.md) | Folder path ↔ HTTP URL ↔ Studio error |
 | [Lab 3](labs/lab-03-printer-name-vs-driver.md) | `Get-Printer` — queue name vs driver (PDFCreator/PDF24) |
 | [Lab 4](labs/lab-04-open-a-listbox-display.md) | Open an e-sign or Print View display in Studio |
+| [Lab 5](labs/lab-05-syswow64-fm20.md) | Fix “newer version required” — replace SysWOW64 FM20.DLL |
 
 ## Related real-world docs
 
