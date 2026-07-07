@@ -1,8 +1,8 @@
-# FactoryTalk View & ActiveX — Beginner Lessons
+# FactoryTalk View, ActiveX & PLC — Beginner Lessons
 
-A short, hands-on introduction to **ActiveX controls** in industrial HMI work — especially Microsoft Forms ListBox (`FM20.DLL`) and Rockwell **CAB** deployment.
+Hands-on lessons from industrial HMI and PLC work — **ActiveX** / ListBox / CAB deployment, plus **Logix alarm FOR-loop** indirection.
 
-Built from real troubleshooting (Steris cycle reports, PDF printers, lab VM setup).
+Built from real troubleshooting (Steris cycle reports, PDF printers, lab VM setup, Decon alarm tracing).
 
 ## Who this is for
 
@@ -25,6 +25,7 @@ Built from real troubleshooting (Steris cycle reports, PDF printers, lab VM setu
 | [03](lessons/03-activex-in-factorytalk-view.md) | How View uses ActiveX on displays |
 | [04](lessons/04-listbox-and-cycle-reports.md) | ListBox vs PDF printer — two different jobs |
 | [05](lessons/05-what-are-dlls.md) | What DLLs are — CAB vs SysWOW64, today’s lab fix |
+| [06](lessons/06-plc-alarm-for-loop-indirection.md) | PLC alarm FOR loop — `Alarm_ACT` vs `Alarm_ON`, `[DINT_IX].[BIT_IX]` |
 
 ## Labs
 
@@ -35,10 +36,11 @@ Built from real troubleshooting (Steris cycle reports, PDF printers, lab VM setu
 | [Lab 3](labs/lab-03-printer-name-vs-driver.md) | `Get-Printer` — queue name vs driver (PDFCreator/PDF24) |
 | [Lab 4](labs/lab-04-open-a-listbox-display.md) | Open an e-sign or Print View display in Studio |
 | [Lab 5](labs/lab-05-syswow64-fm20.md) | Fix “newer version required” — replace SysWOW64 FM20.DLL |
+| [Lab 6](labs/lab-06-build-your-own-alarm-handler.md) | Build a 3-alarm FOR-loop handler in Studio (Decon pattern) |
 
 ## Related real-world docs
 
-If you work on Curia ABQ Steris lab: see `Curia_ABQ/docs/lab-setup-plan.md` and `docs/autoclave-pdf-flow-production.md`.
+If you work on Curia ABQ Steris lab: see `Curia_ABQ/docs/lab-setup-plan.md`, `docs/lab-decon-cycle-stepthrough.md`, and `docs/plc-changes-lab-only.md` (Alarm 22 lab bypass).
 
 ## License
 
