@@ -6,6 +6,8 @@
 
 **Reference:** [Lesson 6 — PLC alarm FOR loop](../lessons/06-plc-alarm-for-loop-indirection.md)
 
+**Lab PLC:** Online to **`BX45183A_lab`** on Echo `192.168.100.70`, or offline from `Curia_ABQ/ACDs/BX45183A_lab.L5X` / `Lab_Back_up/ACDs/BX45183A_lab.ACD`.
+
 ---
 
 ## Part A — Tags (Controller scope)

@@ -2,6 +2,8 @@
 
 **Goal:** Learn why VBA says `PDFCreator` while the UI says PDF24.
 
+**Lab install:** `Curia_ABQ/Lab_Back_up/pdf24-creator-9.2.2-x86.msi` — after install, rename queue `PDF24` → **`PDFCreator`**.
+
 ## Manual path
 
 1. **Settings → Bluetooth & devices → Printers & scanners**

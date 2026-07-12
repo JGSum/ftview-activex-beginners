@@ -39,6 +39,8 @@ PW often stays on **`40 - CYCLE RUN MENU`** with “PRINTING NOT COMPLETETED” 
 
 PW PDF path is more manual (`80`/`81` Print Menu) or via `HEADER.PrintFile` — still uses a virtual printer string, separate from ListBox.
 
+**PLC detail:** [Lesson 7 — PLC cycle report print pipeline](07-plc-cycle-report-print-pipeline.md) walks `Print_main` (Decon) and `asPrintBuffer` / `FC60_PRINT` (PW) using the Curia ABQ lab L5X files.
+
 ## Check yourself
 
 Operator says “PDF builder never opened” on PW during cycle run. Is that likely an ActiveX problem?
@@ -50,4 +52,4 @@ Not necessarily. PW may not auto-open PDF at cycle end at all; check printer ins
 
 </details>
 
-**Labs:** [Lab 5 — SysWOW64 FM20](../labs/lab-05-syswow64-fm20.md) · [Lesson 5 — DLLs](../lessons/05-what-are-dlls.md)
+**Labs:** [Lab 5 — SysWOW64 FM20](../labs/lab-05-syswow64-fm20.md) · [Lesson 5 — DLLs](../lessons/05-what-are-dlls.md) · [Lab 7 — Trace PLC print](../labs/lab-07-trace-plc-print-pipeline.md)
