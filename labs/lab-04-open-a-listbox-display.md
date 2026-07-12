@@ -27,7 +27,9 @@
 
 ## Optional: compare display XML
 
-In repo export, search display XML for:
+Copies in [`reference/hmi/`](../reference/hmi/) — e.g. `steris_decon_electronic_signature.xml`, `81 - PRINT VIEW.xml`.
+
+Search for:
 
 ```text
 Forms.ListBox.1

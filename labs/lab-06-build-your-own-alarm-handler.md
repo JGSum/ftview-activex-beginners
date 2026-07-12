@@ -6,7 +6,7 @@
 
 **Reference:** [Lesson 6 — PLC alarm FOR loop](../lessons/06-plc-alarm-for-loop-indirection.md)
 
-**Lab PLC:** Online to **`BX45183A_lab`** on Echo `192.168.100.70`, or offline from `Curia_ABQ/ACDs/BX45183A_lab.L5X`.
+**Lab PLC:** Online to **`BX45183A_lab`** on Echo `192.168.100.70`, or offline from `reference/plc/BX45183A_lab.L5X`.
 
 ---
 

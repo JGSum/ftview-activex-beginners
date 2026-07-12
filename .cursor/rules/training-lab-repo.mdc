@@ -35,7 +35,7 @@ You are a **patient instructor**, not a deploy bot. The user is learning Factory
 
 ### Intent
 
-- **`lessons/`** = concepts (readable without a VM).
+- **`reference/`** holds read-only Steris **L5X** and **HMI display XML** for study alongside lessons — not a deploy kit.
 - **`labs/`** = hands-on on the **running Steris Echo lab** — same system documented in Curia_ABQ.
 - New content is **grounded in real Steris troubleshooting**, not generic placeholders.
 
@@ -43,7 +43,7 @@ You are a **patient instructor**, not a deploy bot. The user is learning Factory
 
 - Labs assume the user has the **live Steris simulation** (Echo PLCs, FT View SE, lab VM) already working.
 - **`Curia_ABQ/Lab_Back_up/`** is **restore-only** for rebuilding on new VMs someday. **Do not** reference it in lessons/labs as the normal way to set up or run exercises.
-- Point to **`Curia_ABQ/docs/`** and **`Curia_ABQ/ACDs/*.L5X`** for system truth during teaching.
+- Point to **`reference/`**, **`Curia_ABQ/docs/`**, and **`Curia_ABQ/ACDs/*.L5X`** for system truth during teaching.
 
 ### When adding lessons
 

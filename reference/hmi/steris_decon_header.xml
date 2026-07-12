@@ -1,0 +1,1254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gfx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Gfx-SE14.xsd">
+    <displaySettings displayType="onTop" cannotBeReplaced="false" position="specifyPositionInPixels" positionX="0" positionY="0" securityCode="*" backColor="white" titleBar="false" maximumTagUpdateRate="1" focusHighlightColor="lime" disableFocusHighlight="true" size="specifySizeInPixels" width="1280" height="70" allowMultipleRunningCopies="false" cacheAfterDisplaying="true" alwaysUpdating="true" sizeToMainWindow="false" showLastAcquiredValue="true" TrackScreenForNavigation="true" TrackName="" allowResizing="false" whenResized="pan" beepOnPress="false" highlightWhenCursorPassesOver="false" interactiveHighlightColor="black" displayOnScreenKeyboard="false" allowButtonActionOnError="false" fieldNotSelectedTextColor="black" fieldNotSelectedFillColor="white" fieldSelectedTextColor="white" fieldSelectedFillColor="#004000" fieldInErrorNotSelectedTextColor="black" fieldInErrorNotSelectedFillColor="red" fieldInErrorSelectedTextColor="white" fieldInErrorSelectedFillColor="red" startupCommand="Login Default Q!1admin" shutdownCommand="" useGradientStyle="false" endColor="teal" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+    <text name="Text3" height="22" width="64" left="1239" top="38" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="white" wordWrap="true" sizeToFit="true" alignment="middleCenter" fontFamily="Arial" fontSize="14" bold="false" italic="false" underline="false" strikethrough="false" caption="X-7154"/>
+    <stringDisplay name="CurrentUsername" height="16" width="360" left="405" top="223" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" justification="left" dimensionsHeight="1" dimensionsWidth="40" characterOffset="0">
+        <connections>
+            <connection name="Value" expression="CurrentUserName(  )"/>
+        </connections>
+    </stringDisplay>
+    <panel name="Panel5" height="70" width="1205" left="75" top="0" visible="true" wallpaper="false" toolTipText="" exposeToVba="typeInfoExtension" isReferenceObject="false" backStyle="solid" patternStyle="none" backColor="white" patternColor="white" blink="false" description="" borderColor="navy" borderStyle="none" borderWidth="2" borderUsesBackColor="true" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+    <text name="txtUser" height="30" width="50" left="80" top="25" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="false" alignment="middleLeft" fontFamily="Arial" fontSize="9" bold="true" italic="false" underline="false" strikethrough="false" caption="USER:"/>
+    <multistateIndicator name="MultistateIndicator2" height="30" width="150" left="420" top="35" visible="true" wallpaper="false" toolTipText="" exposeToVba="typeInfoExtension" isReferenceObject="false" backStyle="solid" borderStyle="raisedInset" borderUsesBackColor="false" borderWidth="2" description="" shape="rectangle" triggerType="value" currentStateId="0" captionOnBorder="false" setLastStateId="3">
+        <states>
+            <state stateId="Error" backColor="#FFFF80" borderColor="black" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="error" color="black" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="0" value="0" backColor="silver" borderColor="white" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="true" italic="false" underline="false" strikethrough="false" caption="NO ALARMS" color="black" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="1" value="1" backColor="#FFFF80" borderColor="black" patternColor="white" patternStyle="none" blink="true" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="true" italic="false" underline="false" strikethrough="false" caption="ACTIVE ALARM!" color="black" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="2" value="2" backColor="#FFFF80" borderColor="black" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="true" italic="false" underline="false" strikethrough="false" caption="ACTIVE ALARM!" color="black" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+        </states>
+        <connections>
+            <connection name="Indicator" expression="If (AE_NormalUnackedCount(&quot;[Steris_Decon]*&quot;) &gt; 0) OR (AE_InAlmUnackedCount(&quot;[Steris_Decon]*&quot;) &gt; 0) Then 1&#xA;Else If&#xA;AE_InAlmAckedCount(&quot;[Steris_Decon]*&quot;) &gt; 0 Then 2&#xA;Else 0"/>
+        </connections>
+    </multistateIndicator>
+    <text name="Text5" height="25" width="95" left="80" top="45" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="false" alignment="middleLeft" fontFamily="Arial" fontSize="9" bold="true" italic="false" underline="false" strikethrough="false" caption="CYCLE STEP:"/>
+    <multistateIndicator name="MultistateIndicator3" height="25" width="162" left="80" top="0" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" borderStyle="none" borderUsesBackColor="false" borderWidth="8" description="" shape="rectangle" triggerType="value" currentStateId="0" captionOnBorder="false" setLastStateId="2">
+        <states>
+            <state stateId="Error" backColor="navy" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Error" color="white" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleLeft" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="0" value="0" backColor="navy" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="/*SDT*/" color="black" backColor="navy" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="1" value="1" backColor="navy" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="/*N:2 [Steris_Decon]Date_time[2] NOFILL DP:0*/./*N:2 [Steris_Decon]Date_time[1] NOFILL DP:0*/./*N:4 [Steris_Decon]Date_time[0] NOFILL DP:0*/ /*N:2 [Steris_Decon]Date_time[3] ZEROFILL DP:0*/:/*N:2 [Steris_Decon]Date_time[4] ZEROFILL DP:0*/:/*N:2 [Steris_Decon]Date_time[5] ZEROFILL DP:0*/" color="black" backColor="navy" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleRight" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+        </states>
+        <connections>
+            <connection name="Indicator" expression="{[Steris_Decon]Option.Date}"/>
+        </connections>
+    </multistateIndicator>
+    <stringInput name="StringInput1" height="36" width="148" left="405" top="246" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" dimensionsWidth="16" dimensionsHeight="2" justification="left" enabledWhenExpressionIsTrue="true" tabIndex="7" continuouslyUpdate="true" discardInputOnFocusLost="false" defaultData="" inputSecurityCode="*" displayOnScreenKeypad="false" keypadCustomCaption="" remarkCheck="false" remarkInfo="">
+            <connections>
+                <connection name="Value" expression="{[Steris_Decon]User_name_full}"/>
+            </connections>
+        
+        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+            <imageSettings imageReference="noImage"/>
+        </confirm>
+        <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+            <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        </useVariable>
+    </stringInput>
+    <button name="cmd_Login_GreyedOut" height="35" width="75" left="0" top="0" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" style="noborder" captureCursor="false" highlightOnFocus="false" tabIndex="8">
+        <command pressAction="" repeatAction="" releaseAction="" repeatRate="0.25"/>
+        <up patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="#A0A0A4" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="9" bold="true" italic="false" underline="false" strikethrough="false" caption="Login"/>
+            <imageSettings imageReference="noImage"/>
+        </up>
+        <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#D4D0C8" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+            <imageSettings imageReference="noImage"/>
+        </down>
+        <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+            <imageSettings imageReference="noImage"/>
+        </confirm>
+        <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+            <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        </useVariable>
+    </button>
+    <button name="cmd_Logout_GreyedOut" height="35" width="75" left="0" top="35" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" style="noborder" captureCursor="false" highlightOnFocus="false" tabIndex="9">
+        <command pressAction="" repeatAction="" releaseAction="" repeatRate="0.25"/>
+        <up patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="#A0A0A4" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="9" bold="true" italic="false" underline="false" strikethrough="false" caption="Logout"/>
+            <imageSettings imageReference="noImage"/>
+        </up>
+        <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#D4D0C8" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+            <imageSettings imageReference="noImage"/>
+        </down>
+        <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+            <imageSettings imageReference="noImage"/>
+        </confirm>
+        <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+            <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        </useVariable>
+    </button>
+    <button name="cmd_Logout" height="35" width="75" left="0" top="35" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" style="beveled" bevelWidth="1" captureCursor="false" highlightOnFocus="false" tabIndex="6">
+        <command pressAction="" repeatAction="" releaseAction="Login Default Q!1admin&#xA;;Remark Operator has selected User Logout" repeatRate="0.25"/>
+        <up patternColor="black" patternStyle="none" backColor="#E0E0E0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="9" bold="true" italic="false" underline="false" strikethrough="false" caption="Logout"/>
+            <imageSettings imageReference="noImage"/>
+        </up>
+        <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#D4D0C8" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+            <imageSettings imageReference="noImage"/>
+        </down>
+        <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+            <imageSettings imageReference="noImage"/>
+        </confirm>
+        <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+            <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        </useVariable>
+    </button>
+    <button name="cmd_Login" height="35" width="75" left="0" top="0" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" style="beveled" bevelWidth="1" captureCursor="false" highlightOnFocus="false" tabIndex="5">
+        <command pressAction="" repeatAction="" releaseAction="Login" repeatRate="0.25"/>
+        <up patternColor="black" patternStyle="none" backColor="#E0E0E0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="9" bold="true" italic="false" underline="false" strikethrough="false" caption="Login"/>
+            <imageSettings imageReference="noImage"/>
+        </up>
+        <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#D4D0C8" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+            <imageSettings imageReference="noImage"/>
+        </down>
+        <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+            <imageSettings imageReference="noImage"/>
+        </confirm>
+        <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+            <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        </useVariable>
+    </button>
+    <numericInput name="PasswordLevelToPLC" height="20" width="13" left="405" top="288" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" fieldLength="1" justification="left" enabledWhenExpressionIsTrue="true" tabIndex="10" continuouslyUpdate="true" discardInputOnFocusLost="false" defaultData="" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" inputSecurityCode="*" displayOnScreenKeypad="false" keypadCustomCaption="" decimalPlaceType="fixed" remarkCheck="false" remarkInfo="">
+            <connections>
+                <connection name="Value" expression="{[Steris_Decon]Password_level}"/>
+            </connections>
+        
+        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+            <imageSettings imageReference="noImage"/>
+        </confirm>
+        <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+            <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        </useVariable>
+    </numericInput>
+    <text name="Text2" height="16" width="135" left="260" top="290" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="true" alignment="middleCenter" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Password level to PLC:"/>
+    <text name="Text4" height="16" width="90" left="305" top="224" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="true" alignment="middleCenter" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Logged in user:"/>
+    <text name="Text6" height="16" width="166" left="225" top="257" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="true" alignment="middleCenter" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Logged in username to PLC:"/>
+    <text name="Text8" height="19" width="125" left="345" top="192" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="true" alignment="middleCenter" fontFamily="Arial" charHeight="19" charWidth="8" bold="true" italic="false" underline="false" strikethrough="false" caption="VBA CONTROL:"/>
+    <text name="Text9" height="16" width="163" left="230" top="330" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="true" alignment="middleCenter" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Current user read from PLC:"/>
+    <stringDisplay name="CurrentUsername1" height="16" width="360" left="410" top="330" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" justification="left" dimensionsHeight="1" dimensionsWidth="40" characterOffset="0">
+        <connections>
+            <connection name="Value" expression="{[Steris_Decon]User_name}"/>
+        </connections>
+    </stringDisplay>
+    <multistateIndicator name="MultistateIndicator4" height="25" width="255" left="160" top="45" visible="true" wallpaper="false" toolTipText="" exposeToVba="typeInfoExtension" isReferenceObject="false" backStyle="transparent" borderStyle="none" borderUsesBackColor="true" borderWidth="2" description="" shape="rectangle" triggerType="value" currentStateId="55" captionOnBorder="false" setLastStateId="85">
+        <states>
+            <state stateId="Error" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="ERROR" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="0" value="0" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="1" value="1" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="INITIALIZATION" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="2" value="2" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="STANDBY - NS" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="3" value="3" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="READY TO START - NS" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="4" value="4" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="SEAL NS DOOR" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="5" value="5" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="STANDBY - ST" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="6" value="6" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="READY TO START - ST" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="7" value="7" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="SEAL  ST DOOR " color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="8" value="8" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="VACUUM LEVEL" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="9" value="9" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="VACUUM HOLD" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="10" value="10" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="PRESSURE LEVEL" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="11" value="11" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="PRESSURE HOLD" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="12" value="12" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="FORCED AIR REMOVAL" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="13" value="13" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="HEATING UP (with rates)" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="14" value="14" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="HEATING UP" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="15" value="15" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="EXPOSURE" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="16" value="16" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="VACUUM LEVEL" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="17" value="17" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="VACUUM HOLD" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="18" value="18" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="PRESSURE LEVEL" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="19" value="19" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="PRESSURE HOLD" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="20" value="20" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="SLOW EXHAUST" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="21" value="21" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="EQUALIZATION " color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="22" value="22" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="COOLING DELAY" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="23" value="23" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="COOLING PULSES " color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="24" value="24" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="COOLING" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="25" value="25" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="UNSEAL ST DOOR" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="26" value="26" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="true" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="ENABLE ST DOOR" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="27" value="27" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="UNLOAD THROUGH ST DOOR" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="28" value="28" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="SEAL ST DOOR" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="29" value="29" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="UNSEAL NS DOOR" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="30" value="30" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="true" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="ENABLE NS DOOR" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="31" value="31" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="UNLOAD THROUGH NS DOOR" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="32" value="32" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="SEAL NS DOOR" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="33" value="33" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="LRT VACUUM LEVEL" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="34" value="34" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="LRT STABILIZATION" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="35" value="35" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="LRT VACUUM HOLD" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="36" value="36" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="VHP DEHUMIDIFICATION" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="37" value="37" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="VHP BIO-DECONTAMINATION" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="38" value="38" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="VHP AERATION" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="39" value="39" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="40" value="40" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="VFT INITIAL VACUUM LEVEL" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="41" value="41" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="VFT STABILIZATION" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="42" value="42" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="VFT FLOW TEST" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="43" value="43" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="44" value="44" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="PREHEATING" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="45" value="45" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="46" value="46" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="47" value="47" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="48" value="48" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="49" value="49" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="50" value="50" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="UNSEAL ST DOOR" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="51" value="51" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="OPENING ST DOOR" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="52" value="52" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="VHP" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="53" value="53" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="DEHUMIDIFICATION" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="54" value="54" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="STERILIZATION (ST DOOR OPEN)" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="55" value="55" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="STERILIZATION (ST DOOR CYCLING)" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="56" value="56" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="CLOSE ST DOOR" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="57" value="57" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="SEAL ST DOOR" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="58" value="58" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="59" value="59" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="60" value="60" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="DEC VACUUM LEVEL" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="61" value="61" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="DEC VACUUM HOLD" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="62" value="62" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="DEC PRESSURE LEVEL" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="63" value="63" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="DEC PRESSURE HOLD" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="64" value="64" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="DEC HEATING UP" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="65" value="65" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="DEC EXPOSURE" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="66" value="66" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="DEC ABORT SLOW EXHAUST" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="67" value="67" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="DEC ABORT EQUALIZATION" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="68" value="68" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="DEC CONDENSATE REMOVAL" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="69" value="69" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="70" value="70" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="71" value="71" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="72" value="72" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="73" value="73" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="74" value="74" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="75" value="75" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="76" value="76" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="77" value="77" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="78" value="78" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="79" value="79" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="80" value="80" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="81" value="81" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="SAMX HEATING UP" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="82" value="82" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="SAMX EXPOSURE" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="83" value="83" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="SAMX COOLING INITIALIZATION" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="84" value="84" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="SAMX COOLING" color="black" backColor="white" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+        </states>
+        <connections>
+            <connection name="Indicator" expression="{[Steris_Decon]Process.Step}"/>
+        </connections>
+    </multistateIndicator>
+    <numericDisplay name="SystemHour" height="16" width="18" left="410" top="385" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="2" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="system\Hour"/>
+        </connections>
+    </numericDisplay>
+    <text name="Text10" height="16" width="81" left="315" top="385" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="true" alignment="middleCenter" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="System/Hour:"/>
+    <text name="Text11" height="25" width="360" left="230" top="5" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backStyle="solid" backColor="yellow" foreColor="black" wordWrap="true" sizeToFit="false" alignment="middleCenter" fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="HARD DISK SPACE LOW! /*N:7 {Steris_Decon\DriveAvailableSpace} NOFILL DP:2*/ GB OF SPACE LEFT!">
+        <animations>
+            <animateVisibility expression="{Steris_Decon\DriveAvailableSpace} &lt; 5.0" expressionTrueState="visible"/>
+        </animations>
+    </text>
+    <stringDisplay name="StringDisplay1" height="15" width="288" left="120" top="33" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" justification="left" dimensionsHeight="1" dimensionsWidth="32" characterOffset="0">
+        <connections>
+            <connection name="Value" expression="CurrentUserName(  )"/>
+        </connections>
+    </stringDisplay>
+    <text name="Text12" height="30" width="360" left="230" top="5" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backStyle="solid" backColor="yellow" foreColor="black" wordWrap="true" sizeToFit="false" alignment="middleCenter" fontFamily="Arial" fontSize="11" bold="true" italic="false" underline="false" strikethrough="false" caption="               USER LOGGED ON OTHER SIDE!               ">
+        <animations>
+            <animateVisibility expression="({Steris_Decon\LoggedST} == 1)" expressionTrueState="visible"/>
+        </animations>
+    </text>
+    <button name="cmd_Login1" height="35" width="75" left="0" top="0" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" style="beveled" bevelWidth="1" captureCursor="false" highlightOnFocus="false" tabIndex="11">
+        <command pressAction="" repeatAction="" releaseAction="Login" repeatRate="0.25"/>
+        <up patternColor="black" patternStyle="none" backColor="#E0E0E0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="9" bold="true" italic="false" underline="false" strikethrough="false" caption="Login"/>
+            <imageSettings imageReference="noImage"/>
+        </up>
+        <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#D4D0C8" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+            <imageSettings imageReference="noImage"/>
+        </down>
+        <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+            <imageSettings imageReference="noImage"/>
+        </confirm>
+        <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+            <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        </useVariable>
+    </button>
+    <numericDisplay name="CycleRunning" height="16" width="9" left="410" top="440" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="1" showDigitGrouping="false" decimalPlaces="0" format="binary" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="{[Steris_Decon]Process.Running}"/>
+        </connections>
+    </numericDisplay>
+    <text name="Text14" height="16" width="84" left="310" top="440" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="true" alignment="middleCenter" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Cycle running:"/>
+    <button name="Button5" height="70" width="160" left="1075" top="0" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" style="noborder" captureCursor="false" highlightOnFocus="true" tabIndex="12">
+        <command pressAction="" repeatAction="" releaseAction="Display Steris_Decon_service_analog_inputs /M1&#xA;;" repeatRate="0.25"/>
+        <up patternColor="black" patternStyle="none" backColor="#E0E0E0" backStyle="transparent" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Service"/>
+            <imageSettings imageReference="noImage"/>
+        </up>
+        <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+            <imageSettings imageReference="noImage"/>
+        </down>
+        <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+            <imageSettings imageReference="noImage"/>
+        </confirm>
+        <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+            <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        </useVariable>
+        <animations>
+            <animateVisibility expression="NOT {Steris_Decon\ESignLoadedNS} OR ({[Steris_Decon]HMI.ServiceHMI} == 0)" expressionTrueState="visible"/>
+        </animations>
+    </button>
+    <group name="Group1" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false">
+        <multistateIndicator name="MultistateIndicator5" height="70" width="160" left="596" top="0" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="solid" borderStyle="raised" borderUsesBackColor="true" borderWidth="2" description="" shape="rectangle" triggerType="value" currentStateId="0" captionOnBorder="false" setLastStateId="2">
+            <states>
+                <state stateId="Error" backColor="silver" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Cycle Status" color="gray" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                    <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+                </state>
+                <state stateId="0" value="0" backColor="silver" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Cycle Status" color="gray" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                    <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+                </state>
+                <state stateId="1" value="1" backColor="silver" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Cycle Status" color="gray" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                    <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+                </state>
+            </states>
+        </multistateIndicator>
+        <multistateIndicator name="MultistateIndicator6" height="70" width="160" left="756" top="0" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="solid" borderStyle="raised" borderUsesBackColor="true" borderWidth="2" description="" shape="rectangle" triggerType="value" currentStateId="0" captionOnBorder="false" setLastStateId="2">
+            <states>
+                <state stateId="Error" backColor="silver" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Cycle Configuration" color="gray" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                    <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+                </state>
+                <state stateId="0" value="0" backColor="silver" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Cycle Configuration" color="gray" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                    <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+                </state>
+                <state stateId="1" value="1" backColor="silver" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Cycle Configuration" color="gray" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                    <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+                </state>
+            </states>
+        </multistateIndicator>
+        <multistateIndicator name="MultistateIndicator7" height="70" width="160" left="916" top="0" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="solid" borderStyle="raised" borderUsesBackColor="true" borderWidth="2" description="" shape="rectangle" triggerType="value" currentStateId="0" captionOnBorder="false" setLastStateId="2">
+            <states>
+                <state stateId="Error" backColor="silver" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Alarms" color="gray" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                    <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+                </state>
+                <state stateId="0" value="0" backColor="silver" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Alarms" color="gray" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                    <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+                </state>
+                <state stateId="1" value="1" backColor="silver" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Alarms" color="gray" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                    <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+                </state>
+            </states>
+        </multistateIndicator>
+        <multistateIndicator name="MultistateIndicator8" height="70" width="160" left="1076" top="0" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="solid" borderStyle="raised" borderUsesBackColor="true" borderWidth="2" description="" shape="rectangle" triggerType="value" currentStateId="0" captionOnBorder="false" setLastStateId="2">
+            <states>
+                <state stateId="Error" backColor="silver" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Service" color="gray" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                    <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+                </state>
+                <state stateId="0" value="0" backColor="silver" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Service" color="gray" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                    <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+                </state>
+                <state stateId="1" value="1" backColor="silver" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Service" color="gray" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                    <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+                </state>
+            </states>
+        </multistateIndicator>
+        <animations>
+            <animateVisibility expression="({[Steris_Decon]HMI.Force_NS} &gt; 0) OR ({Steris_Decon\LoggedST} == 1) OR {Steris_Decon\GeneratingReport}" expressionTrueState="visible"/>
+        </animations>
+    </group>
+    <group name="Group2" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false">
+        <panel name="Panel3" height="70" width="160" left="915" top="0" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="solid" patternStyle="none" backColor="#E0E0E0" patternColor="white" blink="false" description="" borderColor="navy" borderStyle="raised" borderWidth="2" borderUsesBackColor="true" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+        <panel name="Panel2" height="70" width="160" left="755" top="0" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="solid" patternStyle="none" backColor="#E0E0E0" patternColor="white" blink="false" description="" borderColor="navy" borderStyle="raised" borderWidth="2" borderUsesBackColor="true" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+        <panel name="Panel1" height="70" width="160" left="595" top="0" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="solid" patternStyle="none" backColor="#E0E0E0" patternColor="white" blink="false" description="" borderColor="navy" borderStyle="raised" borderWidth="2" borderUsesBackColor="true" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+        <rectangle name="CycleConfigurationActive" height="60" width="150" left="761" top="5" visible="true" toolTipText="" exposeToVba="typeInfoExtension" isReferenceObject="false" backStyle="solid" backColor="white" foreColor="black" lineStyle="none" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+        <rectangle name="CycleStatusActive" height="60" width="150" left="601" top="5" visible="true" toolTipText="" exposeToVba="typeInfoExtension" isReferenceObject="false" backStyle="solid" backColor="white" foreColor="black" lineStyle="none" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+        <rectangle name="AlarmsActive" height="60" width="150" left="921" top="5" visible="true" toolTipText="" exposeToVba="typeInfoExtension" isReferenceObject="false" backStyle="solid" backColor="white" foreColor="black" lineStyle="none" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+        <button name="Button1" height="70" width="160" left="595" top="0" visible="true" toolTipText="" exposeToVba="typeInfoExtension" isReferenceObject="false" style="noborder" captureCursor="false" highlightOnFocus="false" tabIndex="1">
+            <command pressAction="" repeatAction="" releaseAction="Display Steris_Decon_cyclestatus_main /M1&#xA;;" repeatRate="0.25"/>
+            <up patternColor="black" patternStyle="none" backColor="#E0E0E0" backStyle="transparent" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Cycle Status"/>
+                <imageSettings imageReference="noImage"/>
+            </up>
+            <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+                <imageSettings imageReference="noImage"/>
+            </down>
+            <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+            <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+                <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                    <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                    <imageSettings imageReference="noImage"/>
+                </confirm>
+                <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+                <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            </useVariable>
+            <animations>
+                <animateVisibility expression="{[Steris_Decon]@IsPresent}" expressionTrueState="visible"/>
+            </animations>
+        </button>
+        <button name="Button4" height="70" width="160" left="915" top="0" visible="true" toolTipText="" exposeToVba="typeInfoExtension" isReferenceObject="false" style="noborder" captureCursor="false" highlightOnFocus="true" tabIndex="3">
+            <command pressAction="" repeatAction="" releaseAction="Display Steris_Decon_alarms /M1&#xA;;" repeatRate="0.25"/>
+            <up patternColor="black" patternStyle="none" backColor="#E0E0E0" backStyle="transparent" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Alarms"/>
+                <imageSettings imageReference="noImage"/>
+            </up>
+            <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+                <imageSettings imageReference="noImage"/>
+            </down>
+            <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+            <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+                <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                    <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                    <imageSettings imageReference="noImage"/>
+                </confirm>
+                <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+                <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            </useVariable>
+        </button>
+        <panel name="Panel4" height="70" width="160" left="1075" top="0" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="solid" patternStyle="none" backColor="#E0E0E0" patternColor="white" blink="false" description="" borderColor="navy" borderStyle="raised" borderWidth="2" borderUsesBackColor="true" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+        <rectangle name="ServiceActive" height="60" width="149" left="1081" top="5" visible="true" toolTipText="" exposeToVba="typeInfoExtension" isReferenceObject="false" backStyle="solid" backColor="white" foreColor="black" lineStyle="none" lineWidth="1" patternStyle="none" patternColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+        <button name="Button3" height="70" width="160" left="755" top="0" visible="true" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" style="noborder" captureCursor="false" highlightOnFocus="true" tabIndex="2">
+            <command pressAction="" repeatAction="" releaseAction="Display Steris_Decon_config_select /M1" repeatRate="0.25"/>
+            <up patternColor="black" patternStyle="none" backColor="#E0E0E0" backStyle="transparent" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Cycle Configuration"/>
+                <imageSettings imageReference="noImage"/>
+            </up>
+            <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+                <imageSettings imageReference="noImage"/>
+            </down>
+            <ability showDisabledState="true" expression="({[Steris_Decon]HMI.ServiceHMI} &gt; 0)" enabledWhenExpressionIsTrue="false" disabledImageType="useGrayscale"/>
+            <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+                <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                    <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                    <imageSettings imageReference="noImage"/>
+                </confirm>
+                <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+                <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            </useVariable>
+        </button>
+        <button name="Button2" height="70" width="160" left="1075" top="0" visible="true" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" style="noborder" captureCursor="false" highlightOnFocus="true" tabIndex="4">
+            <command pressAction="" repeatAction="" releaseAction="Display Steris_Decon_service_analog_inputs /M1&#xA;;" repeatRate="0.25"/>
+            <up patternColor="black" patternStyle="none" backColor="#E0E0E0" backStyle="transparent" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Service"/>
+                <imageSettings imageReference="noImage"/>
+            </up>
+            <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+                <imageSettings imageReference="noImage"/>
+            </down>
+            <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+            <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+                <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                    <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                    <imageSettings imageReference="noImage"/>
+                </confirm>
+                <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+                <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            </useVariable>
+        </button>
+        <animations>
+            <animateVisibility expression="({[Steris_Decon]HMI.Force_NS} &gt; 0) OR ({Steris_Decon\LoggedST} == 1) OR {Steris_Decon\GeneratingReport}" expressionTrueState="invisible"/>
+        </animations>
+    </group>
+    <numericDisplay name="LoggedNS" height="23" width="14" left="409" top="479" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="14" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="1" showDigitGrouping="false" decimalPlaces="0" format="binary" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="{Steris_Decon\LoggedNS}"/>
+        </connections>
+    </numericDisplay>
+    <numericDisplay name="LoggedST" height="23" width="14" left="409" top="519" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="14" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="1" showDigitGrouping="false" decimalPlaces="0" format="binary" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="{Steris_Decon\LoggedST}"/>
+        </connections>
+    </numericDisplay>
+    <text name="Text1" height="16" width="114" left="279" top="484" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="true" alignment="middleCenter" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="User logged on NS:"/>
+    <text name="Text7" height="16" width="112" left="284" top="524" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="true" alignment="middleCenter" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="User logged on ST:"/>
+    <button name="Button6" height="70" width="160" left="1075" top="0" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" style="noborder" captureCursor="false" highlightOnFocus="true" tabIndex="13">
+        <command pressAction="" repeatAction="" releaseAction="Display Steris_Decon_service_HMI /M1&#xA;;" repeatRate="0.25"/>
+        <up patternColor="black" patternStyle="none" backColor="#E0E0E0" backStyle="transparent" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Service"/>
+            <imageSettings imageReference="noImage"/>
+        </up>
+        <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+            <imageSettings imageReference="noImage"/>
+        </down>
+        <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+            <imageSettings imageReference="noImage"/>
+        </confirm>
+        <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+            <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        </useVariable>
+        <animations>
+            <animateVisibility expression="({[Steris_Decon]HMI.ServiceHMI} &gt; 0)" expressionTrueState="visible"/>
+        </animations>
+    </button>
+    <text name="Text13" height="16" width="117" left="277" top="560" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="true" alignment="middleCenter" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Service HMI control:"/>
+    <numericDisplay name="ServiceHMIControlStatus" height="18" width="10" left="406" top="559" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial Unicode MS" charHeight="18" charWidth="6" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="1" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="{[Steris_Decon]ServiceHMI_control}"/>
+        </connections>
+    </numericDisplay>
+    <numericDisplay name="TriggerFileTransfer" height="16" width="9" left="412" top="413" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="1" showDigitGrouping="false" decimalPlaces="0" format="binary" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="{[Steris_Decon]HMI.Trigger_transfer}"/>
+        </connections>
+    </numericDisplay>
+    <text name="Text16" height="16" width="157" left="237" top="413" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="false" alignment="middleRight" fontFamily="Arial" charHeight="16" charWidth="6" bold="false" italic="false" underline="false" strikethrough="false" caption="Trigger file transfer:"/>
+    <vbaProject>
+        <vbaReferencesLink>
+            <!--All checked references on the references dialog box!-->
+            <vbaRefLink hash="ad542389a48a5aae612a313b3334f89f" TypeLib_Name="VBA" Description="Visual Basic For Applications">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBWAEIAQQAsACAARABlAHMAYwByAGkAcAB0AGkAbwBu
+AD0AVgBpAHMAdQBhAGwAIABCAGEAcwBpAGMAIABGAG8AcgAgAEEAcABwAGwAaQBjAGEAdABpAG8A
+bgBzACwAIABHAFUASQBEAD0AewAwADAAMAAyADAANABFAEYALQAwADAAMAAwAC0AMAAwADAAMAAt
+AEMAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADQANgB9ACwAIABNAGEAagBvAHIAVgBlAHIA
+cwBpAG8AbgA9ADQALAAgAE0AaQBuAG8AcgBWAGUAcgBzAGkAbwBuAD0AMAAsACAA
+]]>
+            </vbaRefLink>
+            <vbaRefLink hash="9bf92fbe175229b5f0601c4bf4381b5f" TypeLib_Name="DisplayClient" Description="RSView Display Client Object Model">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBEAGkAcwBwAGwAYQB5AEMAbABpAGUAbgB0ACwAIABE
+AGUAcwBjAHIAaQBwAHQAaQBvAG4APQBSAFMAVgBpAGUAdwAgAEQAaQBzAHAAbABhAHkAIABDAGwA
+aQBlAG4AdAAgAE8AYgBqAGUAYwB0ACAATQBvAGQAZQBsACwAIABHAFUASQBEAD0AewA4ADUANAA2
+ADkAMwA0ADAALQBGADEAOAA5AC0AMQAxAEQAMQAtADkAQwAxADcALQAwADAANgAwADkANwA3AEMA
+QQBBAEYAMQB9ACwAIABNAGEAagBvAHIAVgBlAHIAcwBpAG8AbgA9ADEALAAgAE0AaQBuAG8AcgBW
+AGUAcgBzAGkAbwBuAD0AMAAsACAA
+]]>
+            </vbaRefLink>
+            <vbaRefLink hash="b0d387d1804d29964988314e5c534502" TypeLib_Name="stdole" Description="OLE Automation">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBzAHQAZABvAGwAZQAsACAARABlAHMAYwByAGkAcAB0
+AGkAbwBuAD0ATwBMAEUAIABBAHUAdABvAG0AYQB0AGkAbwBuACwAIABHAFUASQBEAD0AewAwADAA
+MAAyADAANAAzADAALQAwADAAMAAwAC0AMAAwADAAMAAtAEMAMAAwADAALQAwADAAMAAwADAAMAAw
+ADAAMAAwADQANgB9ACwAIABNAGEAagBvAHIAVgBlAHIAcwBpAG8AbgA9ADIALAAgAE0AaQBuAG8A
+cgBWAGUAcgBzAGkAbwBuAD0AMAAsACAA
+]]>
+            </vbaRefLink>
+            <vbaRefLink hash="4d04292f7c12576e749760ecf5ac2ea8" TypeLib_Name="DisplayClientEx" Description="RSView Display Client Object Model">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBEAGkAcwBwAGwAYQB5AEMAbABpAGUAbgB0AEUAeAAs
+ACAARABlAHMAYwByAGkAcAB0AGkAbwBuAD0AUgBTAFYAaQBlAHcAIABEAGkAcwBwAGwAYQB5ACAA
+QwBsAGkAZQBuAHQAIABPAGIAagBlAGMAdAAgAE0AbwBkAGUAbAAsACAARwBVAEkARAA9AHsAOQBG
+ADcAMgA2ADcAQwAxAC0ANQA2ADcAQgAtADEAMQBEADMALQBBAEMAMwBCAC0AMAAwADYAMAA5ADcA
+RAA4AEMANwBFAEIAfQAsACAATQBhAGoAbwByAFYAZQByAHMAaQBvAG4APQAxACwAIABNAGkAbgBv
+AHIAVgBlAHIAcwBpAG8AbgA9ADAALAAgAA==]]>
+            </vbaRefLink>
+        </vbaReferencesLink>
+        <vbaItem>
+            <!--Item Name:ThisDisplay, Item Type:HostProjectItem-->
+            <encryptedData hash="8d11e2ea90dfed5a96a34bbe51e8b9ff">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[J05BTUU9VGhpc0Rpc3BsYXksVFlQRT0zDQpWRVJTSU9OIDEuMCBDTEFTUw0KQkVHSU4NCiAgTXVs
+dGlVc2UgPSAtMSAgJ1RydWUNCkVORA0KQXR0cmlidXRlIFZCX05hbWUgPSAiVGhpc0Rpc3BsYXki
+DQpBdHRyaWJ1dGUgVkJfR2xvYmFsTmFtZVNwYWNlID0gRmFsc2UNCkF0dHJpYnV0ZSBWQl9DcmVh
+dGFibGUgPSBGYWxzZQ0KQXR0cmlidXRlIFZCX1ByZWRlY2xhcmVkSWQgPSBUcnVlDQpBdHRyaWJ1
+dGUgVkJfRXhwb3NlZCA9IFRydWUNCg==]]>
+            </encryptedData>
+            <vbaCode>
+                <![CDATA[Public MyTagGroup As TagGroup
+
+Private Sub Display_AnimationStart()
+
+    ShowFreeSpace
+    CrateFolders
+   
+End Sub
+
+
+Private Sub CurrentUsername_Change() 'This client: Logged in username changed ; Both clients: Both logged out - Download current username and password level to the PLC
+    
+On Error GoTo ErrorHandler
+
+    'Check if This client is logged in OR if both clients are logged out
+    If (Me.Application.CurrentUserHasCode("E") Or (LoggedNS.Value = 0 And LoggedST.Value = 0)) And ServiceHMIControlStatus.Value = 0 Then
+    ' Send current user level to PLC
+        If Application.CurrentUserHasCode("A") Then
+            'PasswordLevelToPLC.Value = 5
+            ExecuteCommand "Set {[Steris_Decon]Password_level} 5"
+        ElseIf Application.CurrentUserHasCode("B") Then
+            'PasswordLevelToPLC.Value = 4
+            ExecuteCommand "Set {[Steris_Decon]Password_level} 4"
+        ElseIf Application.CurrentUserHasCode("C") Then
+            'PasswordLevelToPLC.Value = 3
+            ExecuteCommand "Set {[Steris_Decon]Password_level} 3"
+        ElseIf Application.CurrentUserHasCode("D") Then
+            'PasswordLevelToPLC.Value = 2
+            ExecuteCommand "Set {[Steris_Decon]Password_level} 2"
+        ElseIf Application.CurrentUserHasCode("E") Then
+            'PasswordLevelToPLC.Value = 1
+            ExecuteCommand "Set {[Steris_Decon]Password_level} 1"
+        Else
+            'PasswordLevelToPLC.Value = 0
+            ExecuteCommand "Set {[Steris_Decon]Password_level} 0"
+        End If
+    
+    
+    ExecuteCommand "Set {[Steris_Decon]User_name_full} """ & CurrentUsername.Value & """" 'Send user name to the PLC
+    
+    LogDiagnosticsMessage "User logged in: " & CurrentUsername.Value, ftDiagSeverityAudit, ftDiagAudienceOperator ' Log user login operation to audit log
+    
+    End If
+    
+    Exit Sub
+
+ErrorHandler:
+    LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: CurrentUsername_Change(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+    Resume Next
+    
+End Sub
+
+
+Private Sub CurrentUsername1_Change() 'Download current username to PLC
+     'CurrentUsername_Change
+End Sub
+
+
+Private Sub LoggedNS_Change() 'Check if both clients are logged out; to reset user level in the PLC
+    If LoggedNS.Value = 0 And LoggedST.Value = 0 Then
+        CurrentUsername_Change
+    End If
+End Sub
+
+Private Sub LoggedST_Change() 'Check if both clients are logged out; to reset user level in the PLC
+    If LoggedST.Value = 0 And LoggedNS.Value = 0 Then
+        CurrentUsername_Change
+    End If
+End Sub
+
+Private Sub RSView32SEIdleDetectControl1_EnterIdleState()
+
+End Sub
+
+Private Sub SystemHour_Change()
+    ShowFreeSpace
+End Sub
+
+
+Sub ShowFreeSpace()
+On Error GoTo ErrorHandler
+    drvPath = "c:\"
+    Dim fs, d, s
+    
+    Dim total_size As Double
+    Dim used_space As Double
+    Dim available_space As Double
+    
+    Set fs = CreateObject("Scripting.FileSystemObject")
+    Set d = fs.GetDrive(fs.GetDriveName(drvPath))
+
+    
+    total_size = FormatNumber(d.TotalSize / 1024 / 1024 / 1024, 2)
+    used_space = total_size - FormatNumber(d.AvailableSpace / 1024 / 1024 / 1024, 2)
+    available_space = FormatNumber(d.AvailableSpace / 1024 / 1024 / 1024, 2)
+    
+    ExecuteCommand "Set {Steris_Decon\DriveTotalSpace} " & total_size
+    ExecuteCommand "Set {Steris_Decon\DriveUsedSpace} " & used_space
+    ExecuteCommand "Set {Steris_Decon\DriveAvailableSpace} " & available_space
+    
+Exit Sub
+ErrorHandler:
+    LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: ShowFreeSpace(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+    Resume Next
+    
+End Sub
+
+
+Sub CrateFolders()
+On Error GoTo ErrorHandler
+
+    'If not already existing, create folders necessary for storing audit and batch data
+    strFolderData = "C:\Data\"
+    strFolderBatch = "C:\Data\Reports\"
+    strFolderBatchArchive = "C:\Data\Reports_Archive\"
+    strFolderAudit = "C:\Data\Audit\"
+    strFolderAuditArchive = "C:\Data\Audit_Archive\"
+    
+    Set fso = CreateObject("Scripting.FileSystemObject")
+    
+    If Not fso.FolderExists(strFolderData) Then   'Create folder
+       fso.CreateFolder (strFolderData)
+    End If
+    If Not fso.FolderExists(strFolderBatch) Then   'Create folder
+       fso.CreateFolder (strFolderBatch)
+    End If
+    If Not fso.FolderExists(strFolderBatchArchive) Then   'Create folder
+       fso.CreateFolder (strFolderBatchArchive)
+    End If
+    If Not fso.FolderExists(strFolderAudit) Then   'Create folder
+       fso.CreateFolder (strFolderAudit)
+    End If
+    If Not fso.FolderExists(strFolderAuditArchive) Then   'Create folder
+       fso.CreateFolder (strFolderAuditArchive)
+    End If
+    
+Exit Sub
+ErrorHandler:
+    LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: CrateFolders(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+    Resume Next
+
+End Sub
+
+Private Sub ServiceHMIControlStatus_Change()
+    If ServiceHMIControlStatus.Value = 0 And LoggedNS.Value = 1 And LoggedST.Value = 0 Then
+        CurrentUsername_Change
+    End If
+End Sub
+Private Sub TriggerFileTransfer_Change()
+    'Initialize variables used by ErrorHandler
+    Dim Pass As Long
+    Dim PauseTime, Start
+On Error GoTo ErrorHandler
+
+    'Initialize variables
+    Dim file As Variant
+    Dim Path_src_reports, Path_dst, Path_archive_reports, Path_src_audit, Path_archive_audit, Archive_log_cmd As String
+    Dim Transfer_status, Transfer_trigger, Transfer_audit, Transfer_reports_txt As Tag
+    Dim oFile, oFilesSrc, oFolderSrc, oShell As Object
+
+    'Start file transfer
+    If TriggerFileTransfer.Value = 1 Then
+
+        'Create Tag Group and add tags to it
+        If MyTagGroup Is Nothing Then
+            Set MyTagGroup = Application.CreateTagGroup(Me.AreaName)
+            MyTagGroup.Add "{[Steris_Decon]HMI.Transfer_path}"
+            MyTagGroup.Add "{[Steris_Decon]HMI.Transfer_status}"
+            MyTagGroup.Add "{[Steris_Decon]HMI.Trigger_transfer}"
+            MyTagGroup.Add "{[Steris_Decon]HMI.Transfer_audit}"
+            MyTagGroup.Add "{[Steris_Decon]HMI.Transfer_reports_txt}"
+            MyTagGroup.Add "{[Steris_Decon]HMI.Transfer_reports_pdf}"
+        End If
+
+        'Initialize variables
+        Path_src_reports = "C:\Data\Reports\"
+        Path_archive_reports = "C:\Data\Reports_Archive\"
+        Path_dst = MyTagGroup.Item("{[Steris_Decon]HMI.Transfer_path}").Value
+        Path_src_audit = "C:\Data\Audit\"
+        Path_archive_audit = "C:\Data\Audit_Archive\"
+
+        'Initialize tag variables
+        Set fso = CreateObject("Scripting.FileSystemObject")
+        Set Transfer_status = MyTagGroup.Item("{[Steris_Decon]HMI.Transfer_status}")
+        Set Transfer_audit = MyTagGroup.Item("{[Steris_Decon]HMI.Transfer_audit}")
+        Set Transfer_reports_txt = MyTagGroup.Item("{[Steris_Decon]HMI.Transfer_reports_txt}")
+        Set Transfer_reports_pdf = MyTagGroup.Item("{[Steris_Decon]HMI.Transfer_reports_pdf}")
+        
+        Transfer_status.Value = 3 'Status number 3 means "Transferring"
+
+        '1 sec delay to keep the status "transferring" showing
+        Dim Delay, Start2, Finish, TotalTime
+        Delay = 1    ' Set duration.
+        Start2 = Timer    ' Set start time.
+        Do While Timer < Start2 + Delay
+            DoEvents    ' Yield to other processes.
+        Loop
+
+        'Destination directory syntax is incorrect, must end with slash
+        If Not Right(Path_dst, 1) = "\" Then
+            Transfer_status.Value = 6
+        End If
+        
+        'Destination directory not found
+        If Not fso.FolderExists(Path_dst) Then
+            Transfer_status.Value = 5
+        End If
+
+        'If status is ok, start file transfer
+        If Transfer_status.Value = 3 Then
+        
+            'Log audit trail entry about beginning of file transfer
+            LogDiagnosticsMessage "Starting network file transfer to location " & Path_dst, ftDiagSeverityAudit, ftDiagAudienceOperator
+            
+            No_reports = 1
+            No_audits = 1
+            'Transfer reports
+            If (Transfer_reports_txt.Value = 1) Or (Transfer_reports_pdf.Value = 1) Then
+                file = Dir(Path_src_reports)
+                While (file <> "")
+                    If Not fso.FolderExists(Path_dst) Then 'Check for the destination before each file
+                        Transfer_status.Value = 5 'Destination directory not found
+                    End If
+                    If Transfer_status.Value = 3 Then
+                        'Move .txt reports
+                        If Transfer_reports_txt.Value = 1 And InStr(file, ".txt") > 0 Then
+                            fso.CopyFile Path_src_reports & file, Path_archive_reports    'Copy file to archive folder
+                            Name Path_src_reports & file As Path_dst & file       'Move file from src to dst
+                            No_reports = 0
+                        End If
+                        'Move .pdf reports
+                        If Transfer_reports_pdf.Value = 1 And InStr(file, ".pdf") > 0 Then
+                            fso.CopyFile Path_src_reports & file, Path_archive_reports    'Copy file to archive folder
+                            Name Path_src_reports & file As Path_dst & file       'Move file from src to dst
+                            No_reports = 0
+                        End If
+                        file = Dir
+                    End If
+                Wend
+            End If
+
+            'Transfer audit trail files
+            If (Transfer_audit.Value = 1) And (Transfer_status.Value = 3) Then
+                file = Dir(Path_src_audit)
+                'Wevtutil command line tool is used to save the event log that is currently open and being written by FTDiagnostic service
+                Archive_log_cmd = "wevtutil cl " & "FTDiag /bu:" & Path_src_audit & "FTDiag-" & Format(Now(), "yyyymmdd_hhmmss") & ".evtx"
+                Set oShell = CreateObject("WScript.shell")
+                Set oFolderSrc = fso.GetFolder(Path_src_audit)
+                Set oFilesSrc = oFolderSrc.Files
+                'Run shell command with shell window hidden, wait until finished
+                oShell.Run "cmd /C " & Archive_log_cmd, 0, True
+
+                For Each oFile In oFilesSrc
+                    If InStr(fso.GetBaseName(oFile), "FTDiag-") > 0 Then
+                        fso.CopyFile oFile, Path_archive_audit
+                        fso.MoveFile oFile, Path_dst
+                        No_audits = 0
+                    End If
+                Next
+                Set oShell = Nothing
+            End If
+
+            'One second timer to make sure that the file copying is done before refreshing the file view
+            Delay = 1    ' Set duration.
+            Start2 = Timer    ' Set start time.
+            Do While Timer < Start2 + Delay
+                DoEvents    ' Yield to other processes.
+            Loop
+        End If
+
+        'Set transfer trigger to zero
+        Set Transfer_trigger = MyTagGroup.Item("{[Steris_Decon]HMI.Trigger_transfer}")
+        Transfer_trigger.Value = 0
+        
+        'Update status
+        If Transfer_status.Value = 3 Then
+            If No_reports And No_audits Then
+                Transfer_status.Value = 4   'No files to transfer
+            Else
+                Transfer_status.Value = 1   'Transfer succeeded
+                'Log audit trail entry about successful transfer
+                LogDiagnosticsMessage "Network file transfer ended successfully.", ftDiagSeverityAudit, ftDiagAudienceOperator
+            End If
+        End If
+        
+        'Destroy tag group
+        Set MyTagGroup = Nothing
+    End If
+
+    Exit Sub
+
+ErrorHandler:
+    Select Case Err.Number
+        Case &H80040F80
+            PauseTime = 1    ' Set duration.
+            Start = Timer    ' Set start time.
+            Do While Timer < Start + PauseTime
+                DoEvents    ' Yield to other processes.
+            Loop
+            ' need to handle situation where there is an actual fault preventing a tag read, therefore
+            ' used variable Pass to allow a number of failures (in this case 5) before handling as
+            ' true failure
+            If Pass > 5 Then
+                LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: TriggerFileTransfer_Change(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+                If Not MyTagGroup Is Nothing Then
+                    Transfer_status.Value = 7 'Failed to read CPU tags
+                End If
+                Set MyTagGroup = Nothing
+                Exit Sub
+            Else
+                Pass = Pass + 1
+                Resume    'returns to line that failed and tries again
+            End If
+        Case Else
+            LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: TriggerFileTransfer_Change(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+            If Not MyTagGroup Is Nothing Then
+                Transfer_status.Value = 2 'Transfer failed
+            End If
+            Set MyTagGroup = Nothing
+            Exit Sub
+    End Select
+End Sub
+
+Private Sub Display_BeforeAnimationStop()
+    'Destroy tag group
+    Set MyTagGroup = Nothing
+End Sub
+]]>
+            </vbaCode>
+        </vbaItem>
+    </vbaProject>
+</gfx>

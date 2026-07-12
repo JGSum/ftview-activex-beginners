@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gfx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Gfx-SE14.xsd">
+    <displaySettings displayType="replace" position="specifyPositionInPixels" positionX="0" positionY="71" securityCode="*" backColor="#F4F4F4" titleBar="false" maximumTagUpdateRate="0.25" focusHighlightColor="lime" disableFocusHighlight="true" size="specifySizeInPixels" width="1280" height="730" allowMultipleRunningCopies="false" cacheAfterDisplaying="false" sizeToMainWindow="false" showLastAcquiredValue="true" TrackScreenForNavigation="true" TrackName="" allowResizing="false" whenResized="scale" beepOnPress="false" highlightWhenCursorPassesOver="false" interactiveHighlightColor="black" displayOnScreenKeyboard="true" allowButtonActionOnError="true" fieldNotSelectedTextColor="black" fieldNotSelectedFillColor="#DAE8FE" fieldSelectedTextColor="black" fieldSelectedFillColor="white" fieldInErrorNotSelectedTextColor="black" fieldInErrorNotSelectedFillColor="red" fieldInErrorSelectedTextColor="white" fieldInErrorSelectedFillColor="red" startupCommand="" shutdownCommand="" useGradientStyle="false" endColor="teal" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+    <activeX name="ListBox_Overlay" height="635" width="985" left="35" top="75" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" classId="{8BD21D20-EC42-11CE-9E0D-00AA006002F3}" keyNavigation="true" focusHighlight="true" pointerHighlight="true" tabIndex="4">
+        <data progId="Forms.ListBox.1" fileName="FM20.DLL" fileVersion="16.0.10357.20081" typeLibrary="{0D452EE1-E08F-101A-852E-02608C4D0BB4}" typeLibVersion="2.0" data="AAIUAGABAYAAAAAAAwIAAHFRAACBNAAAAAIYADUAAAAFAACAwwAAAAACAABBcmlhbICA&#xA;AA=="/>
+    </activeX>
+    <group name="Group2" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false">
+        <multistateIndicator name="MultistateIndicator2" height="55" width="170" left="1065" top="565" visible="true" toolTipText="" exposeToVba="typeInfoExtension" isReferenceObject="false" backStyle="solid" borderStyle="raised" borderUsesBackColor="true" borderWidth="2" description="" shape="rectangle" triggerType="value" currentStateId="0" captionOnBorder="false" setLastStateId="2">
+            <states>
+                <state stateId="Error" backColor="silver" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <caption fontFamily="Arial" fontSize="12" bold="true" italic="false" underline="false" strikethrough="false" caption="Accept" color="gray" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                    <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+                </state>
+                <state stateId="0" value="0" backColor="silver" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <caption fontFamily="Arial" fontSize="12" bold="true" italic="false" underline="false" strikethrough="false" caption="Accept" color="gray" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                    <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+                </state>
+                <state stateId="1" value="1" backColor="silver" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <caption fontFamily="Arial" fontSize="12" bold="true" italic="false" underline="false" strikethrough="false" caption="Accept" color="gray" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                    <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+                </state>
+            </states>
+        </multistateIndicator>
+        <multistateIndicator name="MultistateIndicator1" height="55" width="170" left="1065" top="655" visible="true" toolTipText="" exposeToVba="typeInfoExtension" isReferenceObject="false" backStyle="solid" borderStyle="raised" borderUsesBackColor="true" borderWidth="2" description="" shape="rectangle" triggerType="value" currentStateId="0" captionOnBorder="false" setLastStateId="2">
+            <states>
+                <state stateId="Error" backColor="silver" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <caption fontFamily="Arial" fontSize="12" bold="true" italic="false" underline="false" strikethrough="false" caption="Reject" color="gray" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                    <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+                </state>
+                <state stateId="0" value="0" backColor="silver" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <caption fontFamily="Arial" fontSize="12" bold="true" italic="false" underline="false" strikethrough="false" caption="Reject" color="gray" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                    <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+                </state>
+                <state stateId="1" value="1" backColor="silver" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                    <caption fontFamily="Arial" fontSize="12" bold="true" italic="false" underline="false" strikethrough="false" caption="Reject" color="gray" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                    <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+                </state>
+            </states>
+        </multistateIndicator>
+    </group>
+    <group name="Group3" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false">
+        <activeX name="FactoryTalkViewSESignatureButton1" height="44" width="136" left="1065" top="565" visible="true" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" classId="{D89BD611-24C4-496B-BA5D-A2C88FA3A13E}" keyNavigation="true" focusHighlight="true" pointerHighlight="true" tabIndex="1">
+            <data progId="SignatureControls.SignatureButton" fileName="Signature.ocx" fileVersion="13.0.0.1" typeLibrary="{B0199FBD-0D64-4E03-A6D6-2AFD46897614}" typeLibVersion="1.3" data="k7IAALgCAAADAAgAC/JXRyAAAABfAGUAeAB0AGUAbgB0AHgADg4AAAMACAAK8ldHIAAAAF8A&#xA;ZQB4AHQAZQBuAHQAeQCMBAAADQAEAHXzDbw0AAAAZgBvAG4AdAADUuMLkY/OEZ3jAKoAS7hR&#xA;AQAAAJABpCwCAAVBcmlhbAUACAAX0HbfJAAAAG0AYQB4AHYAYQBsAHUAZQAAAAAAAMBYQAgA&#xA;BwCtGhWjLAAAAGMAYQBwAHQAaQBvAG4ABgAAAEEAYwBjAGUAcAB0AAAACAAHADs2xYJUAQAA&#xA;YwBvAG0AbQBhAG4AZACbAAAAUwBlAHQAIAAvAFYAIAB7AFsAUwB0AGUAcgBpAHMAXwBEAGUA&#xA;YwBvAG4AXQBIAE0ASQAuAEUAXwBTAGkAZwBuAF8AQQBwAHAAcgBvAHYAZQBkAH0AIAAxADsA&#xA;DQAKAFMAZQB0ACAALwBWACAAewBbAFMAdABlAHIAaQBzAF8ARABlAGMAbwBuAF0ARQBfAFMA&#xA;aQBnAG4AXwBTAGMAcgBlAGUAbgB9ACAAMAA7AA0ACgBTAGUAdAAgAFMAdABlAHIAaQBzAF8A&#xA;RABlAGMAbwBuAFwARQBTAGkAZwBuAEwAbwBhAGQAZQBkAE4AUwAgADAAOwANAAoAUwBlAHQA&#xA;IABTAHQAZQByAGkAcwBfAEQAZQBjAG8AbgBcAEUAUwBpAGcAbgBMAG8AYQBkAGUAZABTAFQA&#xA;IAAwAAMACQCI9QQiJAAAAG8AcABlAHIAYQB0AGkAbwBuAAIAAAAAAAgAFAAsOXXNVAAAAG8A&#xA;cABlAHIAYQB0AGkAbwBuAGQAZQBzAGMAcgBpAHAAdABpAG8AbgANAAAAQQBjAGMAZQBwAHQA&#xA;IABjAHkAYwBsAGUALgAAAAMABwAlWTCjcP3//3YAZQByAHMAaQBvAG4AAQAAAAAA"/>
+        </activeX>
+        <activeX name="FactoryTalkViewSESignatureButton2" height="44" width="136" left="1065" top="655" visible="true" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" classId="{D89BD611-24C4-496B-BA5D-A2C88FA3A13E}" keyNavigation="true" focusHighlight="true" pointerHighlight="true" tabIndex="2">
+            <data progId="SignatureControls.SignatureButton" fileName="Signature.ocx" fileVersion="13.0.0.1" typeLibrary="{B0199FBD-0D64-4E03-A6D6-2AFD46897614}" typeLibVersion="1.3" data="k7IAALgCAAADAAgAC/JXRyAAAABfAGUAeAB0AGUAbgB0AHgADg4AAAMACAAK8ldHIAAAAF8A&#xA;ZQB4AHQAZQBuAHQAeQCMBAAADQAEAHXzDbw0AAAAZgBvAG4AdAADUuMLkY/OEZ3jAKoAS7hR&#xA;AQAAAJABpCwCAAVBcmlhbAUACAAX0HbfJAAAAG0AYQB4AHYAYQBsAHUAZQAAAAAAAMBYQAgA&#xA;BwCtGhWjLAAAAGMAYQBwAHQAaQBvAG4ABgAAAFIAZQBqAGUAYwB0AAAACAAHADs2xYJUAQAA&#xA;YwBvAG0AbQBhAG4AZACbAAAAUwBlAHQAIAAvAFYAIAB7AFsAUwB0AGUAcgBpAHMAXwBEAGUA&#xA;YwBvAG4AXQBIAE0ASQAuAEUAXwBTAGkAZwBuAF8AUgBlAGoAZQBjAHQAZQBkAH0AIAAxADsA&#xA;DQAKAFMAZQB0ACAALwBWACAAewBbAFMAdABlAHIAaQBzAF8ARABlAGMAbwBuAF0ARQBfAFMA&#xA;aQBnAG4AXwBTAGMAcgBlAGUAbgB9ACAAMAA7AA0ACgBTAGUAdAAgAFMAdABlAHIAaQBzAF8A&#xA;RABlAGMAbwBuAFwARQBTAGkAZwBuAEwAbwBhAGQAZQBkAE4AUwAgADAAOwANAAoAUwBlAHQA&#xA;IABTAHQAZQByAGkAcwBfAEQAZQBjAG8AbgBcAEUAUwBpAGcAbgBMAG8AYQBkAGUAZABTAFQA&#xA;IAAwAAMACQCI9QQiJAAAAG8AcABlAHIAYQB0AGkAbwBuAAIAAAAAAAgAFAAsOXXNVAAAAG8A&#xA;cABlAHIAYQB0AGkAbwBuAGQAZQBzAGMAcgBpAHAAdABpAG8AbgANAAAAUgBlAGoAZQBjAHQA&#xA;IABjAHkAYwBsAGUALgAAAAMABwAlWTCjcP3//3YAZQByAHMAaQBvAG4AAQAAAAAA"/>
+        </activeX>
+        <animations>
+            <animateVisibility expression="CurrentUserHasCode( E ) AND {[Steris_Decon]Printing_cmd_inactive} AND ({Steris_Decon\LoggedNS} == 1) AND ({Steris_Decon\ESignLoadedNS} == 1) AND ((NOT {Steris_Decon\STMonitorUsed}) OR ({Steris_Decon\ESignLoadedST} == 1))" expressionTrueState="visible"/>
+        </animations>
+    </group>
+    <numericDisplay name="StartDisableDisplay" height="16" width="18" left="1289" top="662" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="2" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="{[Steris_Decon]HMI.Start_disable}"/>
+        </connections>
+    </numericDisplay>
+    <text name="Text2" height="40" width="271" left="35" top="30" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="navy" wordWrap="true" sizeToFit="false" alignment="middleLeft" fontFamily="Arial" fontSize="16" bold="true" italic="false" underline="false" strikethrough="false" caption="CYCLE REPORT:"/>
+    <numericDisplay name="CycleNumberDisplay" height="16" width="18" left="1288" top="617" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="2" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="{[Steris_Decon]Process.Cycle_number}"/>
+        </connections>
+    </numericDisplay>
+    <numericDisplay name="CycleSelectedSideDisplay" height="16" width="9" left="1288" top="574" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="1" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="{Steris_Decon\CycleSelectedSide}"/>
+        </connections>
+    </numericDisplay>
+    <text name="Text1" height="40" width="226" left="1035" top="500" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="navy" wordWrap="true" sizeToFit="false" alignment="middleCenter" fontFamily="Arial" fontSize="16" bold="true" italic="false" underline="false" strikethrough="false" caption="Electronic Signature:"/>
+    <text name="Text3" height="40" width="458" left="245" top="30" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="navy" wordWrap="true" sizeToFit="false" alignment="middleLeft" fontFamily="Arial" fontSize="16" bold="true" italic="false" underline="false" strikethrough="false" caption="Loading data..."/>
+    <!-- LAB DEBUG: Accept Group3 visibility gates — do not deploy to production -->
+    <panel name="LabAcceptGatePanel" height="200" width="235" left="1030" top="290" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="solid" patternStyle="none" backColor="#FFFFC0" patternColor="white" blink="false" description="" borderColor="navy" borderStyle="outset" borderWidth="2" borderUsesBackColor="true" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+    <text name="LabAcceptGatesTitle" height="18" width="220" left="1038" top="295" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="navy" wordWrap="false" sizeToFit="false" alignment="middleLeft" fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="ACCEPT GATES (lab):"/>
+    <text name="LabGateLbl_HasCodeE" height="16" width="150" left="1038" top="316" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="false" sizeToFit="false" alignment="middleLeft" fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="HasCode E (need 1):"/>
+    <numericDisplay name="LabGate_HasCodeE" height="16" width="18" left="1195" top="316" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="1" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="If CurrentUserHasCode( E ) Then 1 Else 0"/>
+        </connections>
+    </numericDisplay>
+    <text name="LabGateLbl_PrintInactive" height="16" width="150" left="1038" top="336" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="false" sizeToFit="false" alignment="middleLeft" fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="Print inactive (need 1):"/>
+    <numericDisplay name="PrintingInactiveDisplay" height="16" width="18" left="1195" top="336" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="1" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="{[Steris_Decon]Printing_cmd_inactive}"/>
+        </connections>
+    </numericDisplay>
+    <text name="LabGateLbl_LoggedNS" height="16" width="150" left="1038" top="356" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="false" sizeToFit="false" alignment="middleLeft" fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="LoggedNS (need 1):"/>
+    <numericDisplay name="LabGate_LoggedNS" height="16" width="18" left="1195" top="356" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="1" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="{Steris_Decon\LoggedNS}"/>
+        </connections>
+    </numericDisplay>
+    <text name="LabGateLbl_ESignLoadedNS" height="16" width="150" left="1038" top="376" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="false" sizeToFit="false" alignment="middleLeft" fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="ESignLoadedNS (need 1):"/>
+    <numericDisplay name="Loaded_NS" height="16" width="18" left="1195" top="376" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="1" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="{Steris_Decon\ESignLoadedNS}"/>
+        </connections>
+    </numericDisplay>
+    <text name="LabGateLbl_STMon" height="16" width="150" left="1038" top="396" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="false" sizeToFit="false" alignment="middleLeft" fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="STMonitorUsed (lab 0):"/>
+    <numericDisplay name="LabGate_STMonitorUsed" height="16" width="18" left="1195" top="396" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="1" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="{Steris_Decon\STMonitorUsed}"/>
+        </connections>
+    </numericDisplay>
+    <text name="LabGateLbl_ESignLoadedST" height="16" width="150" left="1038" top="416" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="false" sizeToFit="false" alignment="middleLeft" fontFamily="Arial" fontSize="9" bold="false" italic="false" underline="false" strikethrough="false" caption="ESignLoadedST (if ST):"/>
+    <numericDisplay name="LabGate_ESignLoadedST" height="16" width="18" left="1195" top="416" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="1" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="{Steris_Decon\ESignLoadedST}"/>
+        </connections>
+    </numericDisplay>
+    <text name="LabGateLbl_Hint" height="40" width="220" left="1038" top="440" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="navy" wordWrap="true" sizeToFit="false" alignment="topLeft" fontFamily="Arial" fontSize="8" bold="false" italic="false" underline="false" strikethrough="false" caption="Need: E=1, Print=1, LoggedNS=1, LoadedNS=1, and (STMon=0 OR LoadedST=1)"/>
+    <text name="Text4" height="30" width="565" left="460" top="35" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="solid" backColor="yellow" foreColor="black" wordWrap="true" sizeToFit="false" alignment="middleCenter" fontFamily="Arial" fontSize="14" bold="true" italic="false" underline="false" strikethrough="false" caption="     PRINTING COMMAND STILL ACTIVE! PLEASE WAIT...     ">
+        <animations>
+            <animateVisibility expression="{[Steris_Decon]Printing_cmd_inactive}" expressionTrueState="invisible"/>
+            <animateColor expression="{[Steris_Decon]Printing_cmd_inactive}" blinkRate="1">
+                <color value="0" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="blink" backColor1="yellow" backColor2="#8C8C00" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                <color value="1" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="lime" backColor2="lime" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+            </animateColor>
+        </animations>
+    </text>
+    <numericDisplay name="ESignAccepted" height="18" width="10" left="1298" top="291" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="1" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="{[Steris_Decon]HMI.E_Sign_Approved}"/>
+        </connections>
+    </numericDisplay>
+    <numericDisplay name="ESignRejected" height="18" width="10" left="1298" top="316" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="1" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="{[Steris_Decon]HMI.E_Sign_Rejected}"/>
+        </connections>
+    </numericDisplay>
+    <activeX name="ListBox1" height="635" width="985" left="35" top="75" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" classId="{8BD21D20-EC42-11CE-9E0D-00AA006002F3}" keyNavigation="true" focusHighlight="true" pointerHighlight="true" tabIndex="3">
+        <data progId="Forms.ListBox.1" fileName="FM20.DLL" fileVersion="16.0.10357.20081" typeLibrary="{0D452EE1-E08F-101A-852E-02608C4D0BB4}" typeLibVersion="2.0" data="AAIUAGABAYAAAAAAAwIAAHFRAACBNAAAAAIgADUAAAAOAACAwwAAAAACAABMdWNpZGEgQ29u&#xA;c29sZRUJ"/>
+    </activeX>
+    <vbaProject>
+        <vbaReferencesLink>
+            <!--All checked references on the references dialog box!-->
+            <vbaRefLink hash="ad542389a48a5aae612a313b3334f89f" TypeLib_Name="VBA" Description="Visual Basic For Applications">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBWAEIAQQAsACAARABlAHMAYwByAGkAcAB0AGkAbwBu
+AD0AVgBpAHMAdQBhAGwAIABCAGEAcwBpAGMAIABGAG8AcgAgAEEAcABwAGwAaQBjAGEAdABpAG8A
+bgBzACwAIABHAFUASQBEAD0AewAwADAAMAAyADAANABFAEYALQAwADAAMAAwAC0AMAAwADAAMAAt
+AEMAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADQANgB9ACwAIABNAGEAagBvAHIAVgBlAHIA
+cwBpAG8AbgA9ADQALAAgAE0AaQBuAG8AcgBWAGUAcgBzAGkAbwBuAD0AMAAsACAA
+]]>
+            </vbaRefLink>
+            <vbaRefLink hash="9bf92fbe175229b5f0601c4bf4381b5f" TypeLib_Name="DisplayClient" Description="RSView Display Client Object Model">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBEAGkAcwBwAGwAYQB5AEMAbABpAGUAbgB0ACwAIABE
+AGUAcwBjAHIAaQBwAHQAaQBvAG4APQBSAFMAVgBpAGUAdwAgAEQAaQBzAHAAbABhAHkAIABDAGwA
+aQBlAG4AdAAgAE8AYgBqAGUAYwB0ACAATQBvAGQAZQBsACwAIABHAFUASQBEAD0AewA4ADUANAA2
+ADkAMwA0ADAALQBGADEAOAA5AC0AMQAxAEQAMQAtADkAQwAxADcALQAwADAANgAwADkANwA3AEMA
+QQBBAEYAMQB9ACwAIABNAGEAagBvAHIAVgBlAHIAcwBpAG8AbgA9ADEALAAgAE0AaQBuAG8AcgBW
+AGUAcgBzAGkAbwBuAD0AMAAsACAA
+]]>
+            </vbaRefLink>
+            <vbaRefLink hash="b0d387d1804d29964988314e5c534502" TypeLib_Name="stdole" Description="OLE Automation">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBzAHQAZABvAGwAZQAsACAARABlAHMAYwByAGkAcAB0
+AGkAbwBuAD0ATwBMAEUAIABBAHUAdABvAG0AYQB0AGkAbwBuACwAIABHAFUASQBEAD0AewAwADAA
+MAAyADAANAAzADAALQAwADAAMAAwAC0AMAAwADAAMAAtAEMAMAAwADAALQAwADAAMAAwADAAMAAw
+ADAAMAAwADQANgB9ACwAIABNAGEAagBvAHIAVgBlAHIAcwBpAG8AbgA9ADIALAAgAE0AaQBuAG8A
+cgBWAGUAcgBzAGkAbwBuAD0AMAAsACAA
+]]>
+            </vbaRefLink>
+            <vbaRefLink hash="5aaaceaf94ad21669bdaa6a4009ace7f" TypeLib_Name="SignatureControls" Description="FactoryTalk View SE Signature Controls">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBTAGkAZwBuAGEAdAB1AHIAZQBDAG8AbgB0AHIAbwBs
+AHMALAAgAEQAZQBzAGMAcgBpAHAAdABpAG8AbgA9AEYAYQBjAHQAbwByAHkAVABhAGwAawAgAFYA
+aQBlAHcAIABTAEUAIABTAGkAZwBuAGEAdAB1AHIAZQAgAEMAbwBuAHQAcgBvAGwAcwAsACAARwBV
+AEkARAA9AHsAQgAwADEAOQA5AEYAQgBEAC0AMABEADYANAAtADQARQAwADMALQBBADYARAA2AC0A
+MgBBAEYARAA0ADYAOAA5ADcANgAxADQAfQAsACAATQBhAGoAbwByAFYAZQByAHMAaQBvAG4APQAx
+ACwAIABNAGkAbgBvAHIAVgBlAHIAcwBpAG8AbgA9ADMALAAgAA==]]>
+            </vbaRefLink>
+            <vbaRefLink hash="4d04292f7c12576e749760ecf5ac2ea8" TypeLib_Name="DisplayClientEx" Description="RSView Display Client Object Model">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBEAGkAcwBwAGwAYQB5AEMAbABpAGUAbgB0AEUAeAAs
+ACAARABlAHMAYwByAGkAcAB0AGkAbwBuAD0AUgBTAFYAaQBlAHcAIABEAGkAcwBwAGwAYQB5ACAA
+QwBsAGkAZQBuAHQAIABPAGIAagBlAGMAdAAgAE0AbwBkAGUAbAAsACAARwBVAEkARAA9AHsAOQBG
+ADcAMgA2ADcAQwAxAC0ANQA2ADcAQgAtADEAMQBEADMALQBBAEMAMwBCAC0AMAAwADYAMAA5ADcA
+RAA4AEMANwBFAEIAfQAsACAATQBhAGoAbwByAFYAZQByAHMAaQBvAG4APQAxACwAIABNAGkAbgBv
+AHIAVgBlAHIAcwBpAG8AbgA9ADAALAAgAA==]]>
+            </vbaRefLink>
+            <vbaRefLink hash="ee18a101b81dc7b3ee4fa6143ea22f3a" TypeLib_Name="MSForms" Description="Microsoft Forms 2.0 Object Library">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBNAFMARgBvAHIAbQBzACwAIABEAGUAcwBjAHIAaQBw
+AHQAaQBvAG4APQBNAGkAYwByAG8AcwBvAGYAdAAgAEYAbwByAG0AcwAgADIALgAwACAATwBiAGoA
+ZQBjAHQAIABMAGkAYgByAGEAcgB5ACwAIABHAFUASQBEAD0AewAwAEQANAA1ADIARQBFADEALQBF
+ADAAOABGAC0AMQAwADEAQQAtADgANQAyAEUALQAwADIANgAwADgAQwA0AEQAMABCAEIANAB9ACwA
+IABNAGEAagBvAHIAVgBlAHIAcwBpAG8AbgA9ADIALAAgAE0AaQBuAG8AcgBWAGUAcgBzAGkAbwBu
+AD0AMAAsACAA
+]]>
+            </vbaRefLink>
+        </vbaReferencesLink>
+        <vbaItem>
+            <!--Item Name:ThisDisplay, Item Type:HostProjectItem-->
+            <encryptedData hash="8d11e2ea90dfed5a96a34bbe51e8b9ff">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[J05BTUU9VGhpc0Rpc3BsYXksVFlQRT0zDQpWRVJTSU9OIDEuMCBDTEFTUw0KQkVHSU4NCiAgTXVs
+dGlVc2UgPSAtMSAgJ1RydWUNCkVORA0KQXR0cmlidXRlIFZCX05hbWUgPSAiVGhpc0Rpc3BsYXki
+DQpBdHRyaWJ1dGUgVkJfR2xvYmFsTmFtZVNwYWNlID0gRmFsc2UNCkF0dHJpYnV0ZSBWQl9DcmVh
+dGFibGUgPSBGYWxzZQ0KQXR0cmlidXRlIFZCX1ByZWRlY2xhcmVkSWQgPSBUcnVlDQpBdHRyaWJ1
+dGUgVkJfRXhwb3NlZCA9IFRydWUNCg==]]>
+            </encryptedData>
+            <vbaCode>
+                <![CDATA[Dim xlApp As Object
+Dim WithEvents ogroup As TagGroup
+Attribute ogroup.VB_VarHelpID = -1
+Public PrintTagGroup As TagGroup
+Public Filename As String
+Public filepath As String
+
+Private WithEvents HMIAppCli As DisplayClient.Application    'app events used to update real time status
+Attribute HMIAppCli.VB_VarHelpID = -1
+
+Private Sub Display_AnimationStart()
+
+    Dim Pass As Long
+    Dim PauseTime, Start
+    
+On Error GoTo ErrorHandler
+
+    If PrintingInactiveDisplay.Value = 1 Then
+        Dim objFSO, strFolder
+        strFolder = "C:\Data\Reports\"
+        
+        Set objFSO = CreateObject("Scripting.FileSystemObject")
+        If Not objFSO.FolderExists(strFolder) Then
+           objFSO.CreateFolder (strFolder)          'Create report folder if it does not exist
+        End If
+        
+        Set HMIAppCli = Me.Application
+        
+        ListBox1.Clear
+        Text1.Visible = False
+        Text3.Visible = True
+        
+        If PrintTagGroup Is Nothing Then
+            Set PrintTagGroup = Application.CreateTagGroup(Me.AreaName)
+            
+            PrintTagGroup.Add "{[Steris_Decon]Date_time[0]}"
+            PrintTagGroup.Add "{[Steris_Decon]Date_time[1]}"
+            PrintTagGroup.Add "{[Steris_Decon]Date_time[2]}"
+            PrintTagGroup.Add "{[Steris_Decon]Date_time[3]}"
+            PrintTagGroup.Add "{[Steris_Decon]Date_time[4]}"
+            PrintTagGroup.Add "{[Steris_Decon]Date_time[5]}"
+            PrintTagGroup.Add "{[Steris_Decon]User_name}"
+            PrintTagGroup.Add "{[Steris_Decon]Printer_enabled}"
+        End If
+        
+        FillListbox
+        
+        ExecuteCommand "Set {Steris_Decon\ESignLoadedNS} 1"
+        Text1.Visible = True
+    End If
+    
+    Exit Sub
+    
+ErrorHandler:
+    Select Case Err.Number
+        Case &H80040F80
+            PauseTime = 1    ' Set duration.
+            Start = Timer    ' Set start time.
+            Do While Timer < Start + PauseTime
+                DoEvents    ' Yield to other processes.
+            Loop
+            ' need to handle situation where there is an actual fault preventing a tag read, therefore
+            ' used variable Pass to allow a number of failures (in this case 5) before handling as
+            ' true failure
+            If Pass > 5 Then
+                LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: Display_AnimationStart(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+                Set PrintTagGroup = Nothing
+                Resume Next
+            Else
+                Pass = Pass + 1
+                Resume    'returns to line that failed and tries again
+            End If
+        Case Else
+            LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: Display_AnimationStart(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+            Set PrintTagGroup = Nothing
+            Resume Next
+    End Select
+End Sub
+
+
+Private Sub FillListbox()
+
+On Error GoTo ErrorHandler
+
+    Dim DataLine As String
+    Dim FilenameReprint As String
+    FilenameReprint = "C:\Data\Reprint.txt"
+    
+    'Open the file and read each line
+    Open FilenameReprint For Input As #1
+    While Not EOF(1)
+        Line Input #1, DataLine ' read in data 1 line at a time
+        ListBox1.AddItem DataLine
+    Wend
+    Close #1
+    
+    Text3.Visible = False
+    Exit Sub
+    
+ErrorHandler:
+    LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: FillListbox(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+    Resume Next
+End Sub
+
+
+Private Sub PrintLastCycle(action As Boolean, user As String)
+'Append e-signature and checksum to batch report file. Print the file, and copy to batch reports folder.
+    
+    Dim Pass As Long
+    Dim PauseTime, Start
+    
+On Error GoTo ErrorHandler
+    Dim xlApp As Object
+    Set xlApp = CreateObject("WScript.shell")
+    Dim year As String
+    Dim month As String
+    Dim day As String
+    Dim hour As String
+    Dim minute As String
+    Dim second As String
+    Dim actionTime As String
+    Dim filepath_batch As String
+    Dim PrinterEnabled As Boolean
+    
+    PrinterEnabled = PrintTagGroup.Item("{[Steris_Decon]Printer_enabled}").Value
+    
+    'Get current time for e-signature from PLC
+    year = CStr(PrintTagGroup.Item("{[Steris_Decon]Date_time[0]}").Value)
+    month = CStr(PrintTagGroup.Item("{[Steris_Decon]Date_time[1]}").Value)
+    day = CStr(PrintTagGroup.Item("{[Steris_Decon]Date_time[2]}").Value)
+    hour = CStr(PrintTagGroup.Item("{[Steris_Decon]Date_time[3]}").Value)
+    minute = CStr(PrintTagGroup.Item("{[Steris_Decon]Date_time[4]}").Value)
+    second = CStr(PrintTagGroup.Item("{[Steris_Decon]Date_time[5]}").Value)
+    
+    'Add zero in front of date/time members if value is less than 10 to make the file names consistent. (YYYYMMdd_HHmmss format)
+    If Len(month) = 1 Then
+        month = "0" & month
+    End If
+    If Len(day) = 1 Then
+        day = "0" & day
+    End If
+    If Len(hour) = 1 Then
+        hour = "0" & hour
+    End If
+    If Len(minute) = 1 Then
+        minute = "0" & minute
+    End If
+    If Len(second) = 1 Then
+        second = "0" & second
+    End If
+    
+    actionTime = hour & ":" & minute & ":" & second
+    
+    Filename = "DC_Batch_" & year & month & day & "_" & hour & minute & second & ".txt"
+    filepath = "C:\Data\reprint.txt"
+    filepath_batch = "C:\Data\Reports\" & Filename
+    
+    'Fill batch file
+    Open filepath For Append As #1
+        'Print electronic signature
+        Print #1, ""
+        Print #1, "ELECTRONIC SIGNATURE"
+        If action = True Then
+            Print #1, actionTime & " ACCEPTED BY: " & PrintTagGroup.Item("{[Steris_Decon]User_name}").Value
+        ElseIf action = False Then
+            Print #1, actionTime & " REJECTED BY: " & PrintTagGroup.Item("{[Steris_Decon]User_name}").Value
+        End If
+    Close #1
+    PutChecksum (filepath) 'Add checksum at the end of the file
+    FileCopy filepath, filepath_batch
+    FileCopy filepath, "C:\Data\Reprint_last_cycle.txt"
+    
+    'Print batch file
+    If PrinterEnabled Then
+        xlApp.Run ("notepad /p " & filepath_batch)
+    End If
+    'Print batch file to PDF
+    xlApp.Run ("notepad /PT """ & filepath_batch & """ ""PDFCreator""")
+    
+    'Empty reprint.txt for next cycle
+    Open filepath For Output As #1
+    Close #1
+Exit Sub
+    
+ErrorHandler:
+    Select Case Err.Number
+        Case &H80040F80
+            PauseTime = 1    ' Set duration.
+            Start = Timer    ' Set start time.
+            Do While Timer < Start + PauseTime
+                DoEvents    ' Yield to other processes.
+            Loop
+            ' need to handle situation where there is an actual fault preventing a tag read, therefore
+            ' used variable Pass to allow a number of failures (in this case 5) before handling as
+            ' true failure
+            If Pass > 5 Then
+                LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: PrintLastCycle(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+                Set PrintTagGroup = Nothing
+                Resume Next
+            Else
+                Pass = Pass + 1
+                Resume    'returns to line that failed and tries again
+            End If
+        Case Else
+            LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: PrintLastCycle(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+            Set PrintTagGroup = Nothing
+            Resume Next
+    End Select
+End Sub
+
+
+Private Sub PutChecksum(Filename As String)
+' This function calculates a checksum for a file by using Fletcher-16 algorithm
+On Error GoTo ErrorHandler
+
+Dim strDataLine, strFileName As String, lStrLen, lSum1, lSum2, lChecksum, lCRC, lSeed As Long, i As Integer
+    strFileName = Filename
+    lSum1 = 255
+    lSum2 = 255
+    lChecksum = 0
+    Open strFileName For Input As #1
+        While Not EOF(1)
+            Line Input #1, strDataLine                          ' read data 1 line at a time
+            lStrLen = Len(strDataLine)
+            For i = 1 To lStrLen
+                lSum1 = (lSum1 + Asc(strDataLine)) Mod 255
+                lSum2 = (lSum2 + lSum1) Mod 255
+                strDataLine = Right(strDataLine, lStrLen - i)
+            Next
+        Wend
+    Close #1
+    lChecksum = (lSum2 * (2 ^ 8)) Or lSum1                      ' Shift lSum2 left by 8 bits and combine with lSum1
+    
+    Open strFileName For Append As #1
+    Print #1, "Checksum: " & lChecksum                               ' Write Fletcher-16 checksum at the end of the file
+    Close #1
+Exit Sub
+
+ErrorHandler:
+    LogDiagnosticsMessage "Error creating checksum", ftDiagSeverityError, ftDiagAudienceEngineer
+    LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: PutChecksum(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+
+End Sub
+
+
+Private Sub Display_BeforeAnimationStop()
+    'Destroy tag group
+    Set PrintTagGroup = Nothing
+End Sub
+
+Private Sub ListBox1_Click()
+
+End Sub
+
+Private Sub PrintingInactiveDisplay_Change()
+    If PrintingInactiveDisplay.Value = 1 Then
+        Display_AnimationStart
+    End If
+End Sub
+
+
+Private Sub ESignRejected_Change()
+    If ESignRejected.Value = 1 Then
+        Dim action As Boolean
+        Dim PerformerUser As String
+        PerformerUser = "NULL"
+        action = False
+        PrintLastCycle action, PerformerUser
+        ExecuteCommand "Display Steris_Decon_cyclestatus_main /M1"
+    End If
+End Sub
+
+
+Private Sub ESignAccepted_Change()
+    If ESignAccepted.Value = 1 Then
+        Dim action As Boolean
+        Dim PerformerUser As String
+        PerformerUser = "NULL"
+        action = True
+        PrintLastCycle action, PerformerUser
+        ExecuteCommand "Display Steris_Decon_cyclestatus_main /M1"
+    End If
+End Sub
+]]>
+            </vbaCode>
+        </vbaItem>
+    </vbaProject>
+</gfx>

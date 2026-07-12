@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gfx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Gfx-SE14.xsd">
+    <displaySettings displayType="replace" position="specifyPositionInPixels" positionX="0" positionY="0" securityCode="*" backColor="white" titleBar="false" maximumTagUpdateRate="0.1" focusHighlightColor="lime" disableFocusHighlight="true" size="specifySizeInPixels" width="800" height="60" allowMultipleRunningCopies="false" cacheAfterDisplaying="false" sizeToMainWindow="false" showLastAcquiredValue="true" TrackScreenForNavigation="true" TrackName="" allowResizing="false" whenResized="scale" beepOnPress="false" highlightWhenCursorPassesOver="false" interactiveHighlightColor="black" displayOnScreenKeyboard="false" allowButtonActionOnError="true" fieldNotSelectedTextColor="black" fieldNotSelectedFillColor="white" fieldSelectedTextColor="black" fieldSelectedFillColor="white" fieldInErrorNotSelectedTextColor="black" fieldInErrorNotSelectedFillColor="red" fieldInErrorSelectedTextColor="white" fieldInErrorSelectedFillColor="red" startupCommand="" shutdownCommand="" useGradientStyle="false" endColor="teal" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+    <button name="btnLogin" height="30" width="90" left="0" top="0" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" style="3d" captureCursor="false" highlightOnFocus="false" tabIndex="1">
+        <command pressAction="" repeatAction="" releaseAction="Login" repeatRate="0.25"/>
+        <up patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Login"/>
+            <imageSettings imageReference="noImage"/>
+        </up>
+        <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+            <imageSettings imageReference="noImage"/>
+        </down>
+        <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+            <imageSettings imageReference="noImage"/>
+        </confirm>
+        <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+            <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        </useVariable>
+    </button>
+    <button name="btnLogout" height="30" width="90" left="0" top="30" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" style="3d" captureCursor="false" highlightOnFocus="false" tabIndex="2">
+        <command pressAction="" repeatAction="" releaseAction="" repeatRate="0.25"/>
+        <up patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Logout"/>
+            <imageSettings imageReference="noImage"/>
+        </up>
+        <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+            <imageSettings imageReference="noImage"/>
+        </down>
+        <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+            <imageSettings imageReference="noImage"/>
+        </confirm>
+        <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+            <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        </useVariable>
+    </button>
+    <text name="txtUserName" height="16" width="210" left="125" top="10" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="false" alignment="middleLeft" fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="123456"/>
+    <button name="Button3" height="60" width="115" left="685" top="0" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" style="3d" captureCursor="false" highlightOnFocus="false" tabIndex="6">
+        <command pressAction="" repeatAction="" releaseAction="Display &quot;400 - DIGITAL INPUTS 1&quot;  /W 1280 /H 740" repeatRate="0.25"/>
+        <up patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Service"/>
+            <imageSettings imageReference="noImage"/>
+        </up>
+        <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+            <imageSettings imageReference="noImage"/>
+        </down>
+        <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+            <imageSettings imageReference="noImage"/>
+        </confirm>
+        <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+            <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        </useVariable>
+    </button>
+    <button name="Button4" height="60" width="115" left="455" top="0" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" style="3d" captureCursor="false" highlightOnFocus="false" tabIndex="4">
+        <command pressAction="" repeatAction="" releaseAction="Display 55 - CONFIGURE CYCLE  /W 1280 /H 740" repeatRate="0.25"/>
+        <up patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Cycle&#xA;Configuration"/>
+            <imageSettings imageReference="noImage"/>
+        </up>
+        <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+            <imageSettings imageReference="noImage"/>
+        </down>
+        <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+            <imageSettings imageReference="noImage"/>
+        </confirm>
+        <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+            <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        </useVariable>
+    </button>
+    <button name="Button5" height="60" width="115" left="340" top="0" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" style="3d" captureCursor="false" highlightOnFocus="false" tabIndex="3">
+        <command pressAction="" repeatAction="" releaseAction="Display 60 - CYCLE STATUS  /W 1280 /H 740" repeatRate="0.25"/>
+        <up patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Cycle&#xA;Status"/>
+            <imageSettings imageReference="noImage"/>
+        </up>
+        <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+            <imageSettings imageReference="noImage"/>
+        </down>
+        <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+            <imageSettings imageReference="noImage"/>
+        </confirm>
+        <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+            <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        </useVariable>
+    </button>
+    <button name="Button6" height="60" width="115" left="570" top="0" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" style="3d" captureCursor="false" highlightOnFocus="false" tabIndex="5">
+        <command pressAction="" repeatAction="" releaseAction="Display ALARM  /W 1280 /H 740" repeatRate="0.25"/>
+        <up patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="true" italic="false" underline="false" strikethrough="false" caption="Alarms"/>
+            <imageSettings imageReference="noImage"/>
+        </up>
+        <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+            <imageSettings imageReference="noImage"/>
+        </down>
+        <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+            <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+            <imageSettings imageReference="noImage"/>
+        </confirm>
+        <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+            <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        </useVariable>
+    </button>
+    <multistateIndicator name="MultistateIndicator1" height="20" width="230" left="100" top="40" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="solid" borderStyle="raisedInset" borderUsesBackColor="false" borderWidth="1" description="" shape="rectangle" triggerType="value" currentStateId="0" captionOnBorder="false" setLastStateId="3">
+        <states>
+            <state stateId="Error" backColor="navy" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Error" color="white" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="0" value="0" backColor="silver" borderColor="black" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="NO ALARM" color="black" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="1" value="1" backColor="red" borderColor="black" patternColor="white" patternStyle="none" blink="true" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="ALARM ACTIVE" color="black" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="2" value="2" backColor="red" borderColor="black" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="ALARM ACTIVE" color="black" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+        </states>
+        <connections>
+            <connection name="Indicator" expression="{[SterisPW]iHMIAlarmStatus}"/>
+        </connections>
+    </multistateIndicator>
+    <text name="txtUserName1" height="15" width="150" left="90" top="0" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="false" alignment="middleCenter" fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="/*SDT*/"/>
+    <text name="txtUserName2" height="16" width="30" left="95" top="10" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="false" alignment="middleLeft" fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="User:"/>
+    <text name="txtUserName3" height="16" width="40" left="95" top="25" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="false" alignment="middleLeft" fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="Phase:"/>
+    <numericDisplay name="bHMIDataToPrint" height="16" width="90" left="360" top="90" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="10" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="If {[SterisPW]bHMIDataToPrint} Then 1 Else 0"/>
+        </connections>
+    </numericDisplay>
+    <numericDisplay name="PrintingCycleReport" height="16" width="70" left="380" top="120" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" charHeight="16" charWidth="7" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="7" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="If {[SterisPW]bPrintingCycleReport} Then 1 Else 0"/>
+        </connections>
+    </numericDisplay>
+    <numericDisplay name="PrintingCycleParam" height="16" width="70" left="380" top="135" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" charHeight="16" charWidth="7" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="7" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="If {[SterisPW]bReqPrintCycleParameters} Then 1 Else 0"/>
+        </connections>
+    </numericDisplay>
+    <numericDisplay name="PrintingMiscVal" height="16" width="70" left="380" top="150" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" charHeight="16" charWidth="7" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="7" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="If {[SterisPW]bReqPrintMiscellaneousValues} Then 1 Else 0"/>
+        </connections>
+    </numericDisplay>
+    <numericDisplay name="PrintingAnalogVal" height="16" width="70" left="380" top="165" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" charHeight="16" charWidth="7" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="7" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="If {[SterisPW]bReqPrintAnalogValues} Then 1 Else 0"/>
+        </connections>
+    </numericDisplay>
+    <numericDisplay name="PrintingLastCycle" height="16" width="70" left="380" top="180" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" charHeight="16" charWidth="7" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="7" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="If {[SterisPW]bReqPrintLastCycle} Then 1 Else 0"/>
+        </connections>
+    </numericDisplay>
+    <activeX name="RSView32SEIdleDetectControl1" height="70" width="90" left="10" top="70" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" classId="{51D5C640-9FDA-4B18-A632-E49C95C0B8E2}" keyNavigation="false" focusHighlight="false" pointerHighlight="false" tabIndex="7">
+        <data progId="IdleDetect.ucIdleDetect" fileName="IdleDetect.ocx" fileVersion="1.0.0.1" typeLibrary="{43A035C7-B899-43EA-AF97-916FC56737D6}" typeLibVersion="1.0" data="k7IAAKQAAAADAAgAC/JXRyAAAABfAGUAeAB0AGUAbgB0AHgATQkAAAMACAAK8ldHIAAAAF8A&#xA;ZQB4AHQAZQBuAHQAeQA8BwAADQAEAHXzDbw8AAAAZgBvAG4AdAADUuMLkY/OEZ3jAKoAS7hR&#xA;AQAAAJABREIBAA1NUyBTYW5zIFNlcmlmAwAIAIaZR5aE////aQBuAHQAZQByAHYAYQBsAB4A&#xA;AAA="/>
+        <connections>
+            <connection name="Interval" expression="{[SterisPW]iDelayHmiLogout}*60"/>
+        </connections>
+    </activeX>
+    <multistateIndicator name="MultistateIndicator3" height="20" width="86" left="251" top="3" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="solid" borderStyle="line" borderUsesBackColor="false" borderWidth="1" description="" shape="rectangle" triggerType="value" currentStateId="1" captionOnBorder="false" setLastStateId="2">
+        <states>
+            <state stateId="Error" backColor="navy" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="Error" color="white" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="0" value="0" backColor="lime" borderColor="black" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="" color="white" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="1" value="1" backColor="lime" borderColor="black" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="MANUAL MODE" color="black" backColor="navy" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+        </states>
+        <animations>
+            <animateVisibility expression="{[SterisPW]dM2.13}" expressionTrueState="visible"/>
+        </animations>
+        <connections>
+            <connection name="Indicator" expression="{[SterisPW]dM2.13}"/>
+        </connections>
+    </multistateIndicator>
+    <multistateIndicator name="MultistateIndicator2" height="16" width="200" left="135" top="25" visible="true" wallpaper="false" toolTipText="" exposeToVba="typeInfoExtension" isReferenceObject="false" backStyle="transparent" borderStyle="none" borderUsesBackColor="true" borderWidth="2" description="" shape="rectangle" triggerType="value" currentStateId="38" captionOnBorder="false" setLastStateId="39">
+        <states>
+            <state stateId="Error" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="false" italic="false" underline="false" strikethrough="false" caption="ERROR" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleCenter" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="0" value="0" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="NO PHASE IN PROGRESS" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="1" value="1" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="FILLING WITH PORT 1" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="2" value="2" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="FILLING WITH PORT 2" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="3" value="3" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="FILLING WITH PORT 3" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="4" value="4" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="FINAL RINSE DRAINING" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="5" value="5" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="VENTING AND DUMPING" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="6" value="6" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="14" bold="false" italic="false" underline="false" strikethrough="false" caption="DUMPING TANK INTO THE SUMP" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="topLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="7" value="7" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="FILLING FINAL RINSE TANK" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="8" value="10" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="INJECTING CHEMICAL" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="9" value="11" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="INJECTING WITH CHEMICAL# 1" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="10" value="12" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="INJECTING WITH CHEMICAL# 2" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="11" value="13" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="INJECTING WITH CHEMICAL# 3" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="12" value="21" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="DRYING F.R. TANK" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="13" value="23" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="HEATING FINAL RINSE TANK" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="14" value="22" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="HEATING: /*N:2 [SterisPW]aiValuesToPrint[37] ZEROFILL DP:0*/:/*N:2 [SterisPW]aiValuesToPrint[38] ZEROFILL DP:0*/ " color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="15" value="31" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="RECIRCULATING" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="16" value="41" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="HEATING AND RECIRCULATING" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="17" value="51" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="DRAINING SUMP" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="18" value="52" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="DRAINING FINAL RINSE TANK" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="19" value="53" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="DRAIN PIPING" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="20" value="61" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="NON-RECIRCULATING" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="21" value="101" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="CHAMB. COOLD.  TEMP. S.P.: /*N:4 aiValuesFromHMI_156_C ZEROFILL DP:1*/ºC" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="22" value="111" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="DRYING" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="23" value="112" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="COOLING HEATERS" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="24" value="113" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="COOLING HEATERS" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="25" value="114" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="PROCESSING NON-REC FINAL RINSE" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="26" value="115" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="14" bold="false" italic="false" underline="false" strikethrough="false" caption="COOLING DOWN CHAMBER" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="topLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="27" value="120" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="WAITING FOR PORT #1 AUT SIGNAL" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="28" value="121" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="WAITING FOR PORT #2 AUT SIGNAL" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="29" value="122" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="WAITING FOR PORT #3 AUT. SIGNAL" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="30" value="123" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="VAPOR REMOVAL" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="31" value="9" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="PREPARING INJECTION" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="32" value="91" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="TRANSFERING WATER" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="33" value="16" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="14" bold="false" italic="false" underline="false" strikethrough="false" caption="PRIMING RECIRCULATING PUMP" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="topLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="34" value="102" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="CHAMB. COOLD. TEMP. S.P.: /*N:5 aiHMIValues2_158_F NOFILL DP:1*/ ºF " color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="35" value="17" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="DRAINING DEAD LEG" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="36" value="8" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="MEASURING TOC" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="37" value="130" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="NON-RECIRCULATED PRE-WASH" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+            <state stateId="38" value="131" backColor="white" borderColor="navy" patternColor="white" patternStyle="none" blink="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="8" bold="true" italic="false" underline="false" strikethrough="false" caption="WAITING FOR CHAMBER TO COOL" color="black" backColor="#C4DBFF" backStyle="transparent" alignment="middleLeft" wordWrap="true" blink="false"/>
+                <imageSettings imageName="" alignment="middleCenter" backStyle="transparent" color="white" backColor="navy" scaled="false" blink="false"/>
+            </state>
+        </states>
+        <connections>
+            <connection name="Indicator" expression="{[SterisPW]aiHMIValues2[102]}"/>
+        </connections>
+    </multistateIndicator>
+    <vbaProject>
+        <vbaReferencesLink>
+            <!--All checked references on the references dialog box!-->
+            <vbaRefLink hash="ad542389a48a5aae612a313b3334f89f" TypeLib_Name="VBA" Description="Visual Basic For Applications">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBWAEIAQQAsACAARABlAHMAYwByAGkAcAB0AGkAbwBu
+AD0AVgBpAHMAdQBhAGwAIABCAGEAcwBpAGMAIABGAG8AcgAgAEEAcABwAGwAaQBjAGEAdABpAG8A
+bgBzACwAIABHAFUASQBEAD0AewAwADAAMAAyADAANABFAEYALQAwADAAMAAwAC0AMAAwADAAMAAt
+AEMAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADQANgB9ACwAIABNAGEAagBvAHIAVgBlAHIA
+cwBpAG8AbgA9ADQALAAgAE0AaQBuAG8AcgBWAGUAcgBzAGkAbwBuAD0AMAAsACAA
+]]>
+            </vbaRefLink>
+            <vbaRefLink hash="9bf92fbe175229b5f0601c4bf4381b5f" TypeLib_Name="DisplayClient" Description="RSView Display Client Object Model">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBEAGkAcwBwAGwAYQB5AEMAbABpAGUAbgB0ACwAIABE
+AGUAcwBjAHIAaQBwAHQAaQBvAG4APQBSAFMAVgBpAGUAdwAgAEQAaQBzAHAAbABhAHkAIABDAGwA
+aQBlAG4AdAAgAE8AYgBqAGUAYwB0ACAATQBvAGQAZQBsACwAIABHAFUASQBEAD0AewA4ADUANAA2
+ADkAMwA0ADAALQBGADEAOAA5AC0AMQAxAEQAMQAtADkAQwAxADcALQAwADAANgAwADkANwA3AEMA
+QQBBAEYAMQB9ACwAIABNAGEAagBvAHIAVgBlAHIAcwBpAG8AbgA9ADEALAAgAE0AaQBuAG8AcgBW
+AGUAcgBzAGkAbwBuAD0AMAAsACAA
+]]>
+            </vbaRefLink>
+            <vbaRefLink hash="b0d387d1804d29964988314e5c534502" TypeLib_Name="stdole" Description="OLE Automation">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBzAHQAZABvAGwAZQAsACAARABlAHMAYwByAGkAcAB0
+AGkAbwBuAD0ATwBMAEUAIABBAHUAdABvAG0AYQB0AGkAbwBuACwAIABHAFUASQBEAD0AewAwADAA
+MAAyADAANAAzADAALQAwADAAMAAwAC0AMAAwADAAMAAtAEMAMAAwADAALQAwADAAMAAwADAAMAAw
+ADAAMAAwADQANgB9ACwAIABNAGEAagBvAHIAVgBlAHIAcwBpAG8AbgA9ADIALAAgAE0AaQBuAG8A
+cgBWAGUAcgBzAGkAbwBuAD0AMAAsACAA
+]]>
+            </vbaRefLink>
+            <vbaRefLink hash="4d04292f7c12576e749760ecf5ac2ea8" TypeLib_Name="DisplayClientEx" Description="RSView Display Client Object Model">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBEAGkAcwBwAGwAYQB5AEMAbABpAGUAbgB0AEUAeAAs
+ACAARABlAHMAYwByAGkAcAB0AGkAbwBuAD0AUgBTAFYAaQBlAHcAIABEAGkAcwBwAGwAYQB5ACAA
+QwBsAGkAZQBuAHQAIABPAGIAagBlAGMAdAAgAE0AbwBkAGUAbAAsACAARwBVAEkARAA9AHsAOQBG
+ADcAMgA2ADcAQwAxAC0ANQA2ADcAQgAtADEAMQBEADMALQBBAEMAMwBCAC0AMAAwADYAMAA5ADcA
+RAA4AEMANwBFAEIAfQAsACAATQBhAGoAbwByAFYAZQByAHMAaQBvAG4APQAxACwAIABNAGkAbgBv
+AHIAVgBlAHIAcwBpAG8AbgA9ADAALAAgAA==]]>
+            </vbaRefLink>
+            <vbaRefLink hash="4fdd09f3ef76c2ce48349790379c77be" TypeLib_Name="IdleDetect" Description="IdleDetect">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBJAGQAbABlAEQAZQB0AGUAYwB0ACwAIABEAGUAcwBj
+AHIAaQBwAHQAaQBvAG4APQBJAGQAbABlAEQAZQB0AGUAYwB0ACwAIABHAFUASQBEAD0AewA0ADMA
+QQAwADMANQBDADcALQBCADgAOQA5AC0ANAAzAEUAQQAtAEEARgA5ADcALQA5ADEANgBGAEMANQA2
+ADcAMwA3AEQANgB9ACwAIABNAGEAagBvAHIAVgBlAHIAcwBpAG8AbgA9ADEALAAgAE0AaQBuAG8A
+cgBWAGUAcgBzAGkAbwBuAD0AMAAsACAA
+]]>
+            </vbaRefLink>
+        </vbaReferencesLink>
+        <vbaItem>
+            <!--Item Name:ThisDisplay, Item Type:HostProjectItem-->
+            <encryptedData hash="8d11e2ea90dfed5a96a34bbe51e8b9ff">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[J05BTUU9VGhpc0Rpc3BsYXksVFlQRT0zDQpWRVJTSU9OIDEuMCBDTEFTUw0KQkVHSU4NCiAgTXVs
+dGlVc2UgPSAtMSAgJ1RydWUNCkVORA0KQXR0cmlidXRlIFZCX05hbWUgPSAiVGhpc0Rpc3BsYXki
+DQpBdHRyaWJ1dGUgVkJfR2xvYmFsTmFtZVNwYWNlID0gRmFsc2UNCkF0dHJpYnV0ZSBWQl9DcmVh
+dGFibGUgPSBGYWxzZQ0KQXR0cmlidXRlIFZCX1ByZWRlY2xhcmVkSWQgPSBUcnVlDQpBdHRyaWJ1
+dGUgVkJfRXhwb3NlZCA9IFRydWUNCg==]]>
+            </encryptedData>
+            <vbaCode>
+                <![CDATA[Public blnAreaNodeHMI_1 As Boolean
+Public blnAreaNodeHMI_2 As Boolean
+Public blnSecurityMaintenance As Boolean
+Public blnSecurityEngineer As Boolean
+Public blnSecuritySupervisor As Boolean
+Public blnSecurityOperator As Boolean
+Public blnSecurityGuest As Boolean
+Public strCurrentScreenName As String
+
+Public strPrintMiscVal As String
+Public strPrintCycleReport As String
+Public strPrintCycleParam As String
+Public strPrintAnalogVal As String
+Public strPrintLastCycle As String
+
+Public blnPrintMiscVal As Boolean
+Public blnPrintCycleReport As Boolean
+Public blnPrintCycleParam As Boolean
+Public blnPrintAnalogVal As Boolean
+Public blnPrintLastCycle As Boolean
+
+Public bReportMaster As Boolean
+Public WithEvents HMIAppCli As DisplayClient.Application    'app events used to update real time status
+Attribute HMIAppCli.VB_VarHelpID = -1
+
+Private WithEvents appStatus As Application                  'app events used to update real time status
+Attribute appStatus.VB_VarHelpID = -1
+
+Public HMITagGroup As TagGroup                               'define HMI Tag Group
+
+Dim xlApp As Object
+
+Private Sub btnLogin_Released()
+
+End Sub
+
+Private Sub btnLogout_Press()
+
+Login "ABQOT\SterisDefault", "Defaultpbuc&087"
+
+End Sub
+
+Private Sub Display_AnimationStart()
+    
+    Set HMIAppCli = Me.Application       '   Set Application Name
+   
+    'Call GetLocalNode                    '   Get Local Node
+    Login "ABQOT\SterisDefault", "Defaultpbuc&087"              '   Login Default User
+    
+    If HMITagGroup Is Nothing Then       'Checks for existence of tag group
+        Set HMITagGroup = Application.CreateTagGroup(Me.AreaName, 500)
+        
+        HMITagGroup.Add "{[SterisPW]asPrintBuffer[0]}"
+        HMITagGroup.Add "{[SterisPW]bHMIPrintDone}"
+        HMITagGroup.Add "sCurrentUserName"
+        HMITagGroup.Add "bConfigRecircChemicalVisible"
+        HMITagGroup.Add "bConfigRecircPortVisible"
+        HMITagGroup.Add "bConfigFRinseTypeVisible"
+        HMITagGroup.Add "bConfigFRinsePortVisible"
+        HMITagGroup.Add "{[SterisPW]sCurrentHmiUser}" 'GB 2018-04-17 Line added to print correct user
+        HMITagGroup.Add "bIsReportMaster" 'MC 2024-01-31 APG12090 SSQ20230811918
+        HMITagGroup.Add "{[SterisPW]sPrinterName}" 'MC 2024-01-31 APG12090 SSQ20230811918
+        HMITagGroup.Add "{[SterisPW]sRemoteNetworkPath}" 'MC 2024-01-31 APG12090 SSQ20230811918
+    End If
+    
+    bReportMaster = HMITagGroup.Item("bIsReportMaster").Value 'APG12091 20240606 MC Local tag for report master load or unload
+
+    Call GetCurrentUserName              '   Get Current Username on startup
+    
+End Sub
+Private Sub GMP_SE_Login(UserName As String)
+
+Set sHmiUserName = GMP_SE.Application.CurrentUserName
+
+End Sub
+
+Private Sub GetCurrentUserName()
+
+On Error GoTo ErrorHandler
+   
+   Dim strPlainName As String
+   Dim strFullName As String
+   Dim NameStartPos As Integer
+   Dim NameLength As Integer
+
+   strFullName = HMIAppCli.Application.CurrentUserName
+   NameStartPos = InStr(strFullName, "\")               'Remove the Windows Domain part of the user name
+   NameLength = Len(strFullName) - NameStartPos
+   strPlainName = Right(strFullName, NameLength)
+   txtUserName.Caption = Left(strPlainName, 20)
+   
+   HMITagGroup.Item("sCurrentUserName").Value = Left(strPlainName, 20)
+   HMITagGroup.Item("{[SterisPW]sCurrentHmiUser}").Value = Left(strPlainName, 20) 'GB 2018-04-17 Line added to print correct user
+   
+Exit Sub
+
+ErrorHandler:
+    
+    txtUserName.Caption = "Error"
+    LogDiagnosticsMessage "Error Retrieving User Name", ftDiagSeverityError, ftDiagAudienceEngineer
+    LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: GetCurrentUserName(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+End Sub
+
+Private Sub bHMIDataToPrint_Change()
+    
+On Error GoTo ErrorHandler
+If bReportMaster Then 'MC 2024-06-06 APG12091
+    If bHMIDataToPrint.Value > 0 And blnPrintMiscVal Then           'Printing Misc Values
+        PRT_Print (strPrintMiscVal)
+    ElseIf bHMIDataToPrint.Value > 0 And blnPrintAnalogVal Then     'Printing Analog Values
+        PRT_Print (strPrintAnalogVal)
+    ElseIf bHMIDataToPrint.Value > 0 And blnPrintCycleParam Then    'Printing Cycle Parameters
+        PRT_Print (strPrintCycleParam)
+    ElseIf bHMIDataToPrint.Value > 0 And blnPrintCycleReport Then   'Printing Cycle Report
+        PRT_Print (strPrintCycleReport)
+    ElseIf bHMIDataToPrint.Value > 0 And blnPrintLastCycle Then     'Printing last cycle
+        PRT_Print (strPrintLastCycle)
+    ElseIf bHMIDataToPrint.Value > 0 Then                           'Printing unknown strings
+        PRT_Print ("C:\Data\Print\PrintBuffer.txt")
+    Else
+        HMITagGroup.Item("{[SterisPW]bHMIPrintDone}").Value = 0     'Reset the print done flag when no data to print
+    End If
+
+End If 'MC 2024-01-31 APG12090 SSQ20230811918
+
+Exit Sub
+        
+ErrorHandler:
+    
+    LogDiagnosticsMessage "Error managing print pointer", ftDiagSeverityError, ftDiagAudienceEngineer
+    LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: bHMIDataToPrint_Change(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+    
+End Sub
+
+Public Sub GetCurrentUserCode() '   Extract Curent User Security Code
+
+    blnSecurityEngineer = HMIAppCli.Application.CurrentUserHasCode("A")
+    blnSecuritySupervisor = HMIAppCli.Application.CurrentUserHasCode("B")
+    blnSecurityOperator = HMIAppCli.Application.CurrentUserHasCode("C")
+    blnSecurityGuest = HMIAppCli.Application.CurrentUserHasCode("D")
+    blnSecurityMaintenance = HMIAppCli.Application.CurrentUserHasCode("E")
+    
+End Sub
+Private Sub Display_BeforeAnimationStop()
+    Set appStatus = Nothing
+    ' destroy tag group
+    Set HMITagGroup = Nothing
+End Sub
+Private Sub PRT_Print(FileName As String)
+
+On Error GoTo ErrorHandler
+
+
+    'APG10000 DGB  2020-06-12 - Close All Opened Connection
+    Close
+
+    Open FileName For Append As #1
+    
+    Print #1, "" & HMITagGroup.Item("{[SterisPW]asPrintBuffer[0]}").Value   'Open required file and adding first string in PLC print buffer
+
+    Close #1
+       
+    HMITagGroup.Item("{[SterisPW]bHMIPrintDone}").Value = 1                 'Set the print done flag for PLC
+
+Exit Sub
+
+ErrorHandler:
+    
+    LogDiagnosticsMessage "Error printing to file", ftDiagSeverityError, ftDiagAudienceEngineer
+    LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: PRT_Print(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+
+End Sub
+
+
+
+Private Sub PrintingMiscVal_Change()
+    
+On Error GoTo ErrorHandler
+
+If bReportMaster Then 'MC 2024-06-06 APG12091
+
+    If PrintingMiscVal.Value = 1 Then
+        strPrintMiscVal = "C:\Data\Print\MiscValues_" & Format(Now(), "yyyymmdd_hhmmss") & ".txt"   'On rising edge of Misc Values Print Request, set the new file name
+        blnPrintMiscVal = True
+    Else
+        If bHMIDataToPrint.Value = 0 And blnPrintMiscVal Then                                       'On faling edge of Misc Values Print Request, put CRC at the end of the file
+            blnPrintMiscVal = False
+            PutCRC (strPrintMiscVal)
+            PrintFile (strPrintMiscVal)
+        End If
+    End If
+End If 'MC 2024-01-31 APG12090 SSQ20230811918
+Exit Sub
+    
+ErrorHandler:
+    
+    LogDiagnosticsMessage "Error Misc Values Printing request", ftDiagSeverityError, ftDiagAudienceEngineer
+    LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: PrintingMiscVal_Change(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+    
+End Sub
+
+Private Sub PrintingCycleParam_Change()
+    
+On Error GoTo ErrorHandler
+
+If bReportMaster Then 'MC 2024-06-06 APG12091
+
+    If PrintingCycleParam.Value = 1 Then
+        strPrintCycleParam = "C:\Data\Print\CycleParameters_" & Format(Now(), "yyyymmdd_hhmmss") & ".txt"   'On rising edge of Cycle Parameters Print Request, set the new file name
+        blnPrintCycleParam = True
+    Else
+        If bHMIDataToPrint.Value = 0 And blnPrintCycleParam Then                                            'On faling edge of Cycle Parameters Print Request, put CRC at the end of the file
+            blnPrintCycleParam = False
+            PutCRC (strPrintCycleParam)
+            PrintFile (strPrintCycleParam)
+        End If
+    End If
+End If 'MC 2024-01-31 APG12090 SSQ20230811918
+Exit Sub
+
+ErrorHandler:
+    
+    LogDiagnosticsMessage "Error Cycle Parameters Printing request", ftDiagSeverityError, ftDiagAudienceEngineer
+    LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: PrintingCycleParam_Change(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+    
+End Sub
+
+Private Sub PrintingCycleReport_Change()
+    
+On Error GoTo ErrorHandler
+
+If bReportMaster Then 'MC 2024-06-06 APG12091
+
+    If PrintingCycleReport.Value = 1 Then
+        strPrintCycleReport = "C:\Data\Print\CycleReport_" & Format(Now(), "yyyymmdd_hhmmss") & ".txt"  'On rising edge of Cycle Report Print Request, set the new file name
+        blnPrintCycleReport = True
+    Else
+        If bHMIDataToPrint.Value = 0 And blnPrintCycleReport Then                                       'On faling edge of Cycle Report Print Request, put CRC at the end of the file
+            blnPrintCycleReport = False
+            PutCRC (strPrintCycleReport)
+            PrintFile (strPrintCycleReport)
+        End If
+    End If
+End If 'MC 2024-01-31 APG12090 SSQ20230811918
+Exit Sub
+    
+ErrorHandler:
+    
+    LogDiagnosticsMessage "Error Cycle Report Printing request", ftDiagSeverityError, ftDiagAudienceEngineer
+    LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: PrintingCycleReport_Change(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+    
+End Sub
+Private Sub PrintingAnalogVal_Change()
+    
+On Error GoTo ErrorHandler
+
+If bReportMaster Then 'MC 2024-06-06 APG12091
+
+    If PrintingAnalogVal.Value = 1 Then
+        strPrintAnalogVal = "C:\Data\Print\AnalogValues_" & Format(Now(), "yyyymmdd_hhmmss") & ".txt"   'On rising edge of Analog Values Print Request, set the new file name
+        blnPrintAnalogVal = True
+    Else
+        If bHMIDataToPrint.Value = 0 And blnPrintAnalogVal Then                                         'On faling edge of Analog Values Print Request, put CRC at the end of the file
+            blnPrintAnalogVal = False
+            PutCRC (strPrintAnalogVal)
+            PrintFile (strPrintAnalogVal)
+        End If
+    End If
+End If 'MC 2024-01-31 APG12090 SSQ20230811918
+Exit Sub
+    
+ErrorHandler:
+    
+    LogDiagnosticsMessage "Error Analog Values Printing request", ftDiagSeverityError, ftDiagAudienceEngineer
+    LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: PrintingAnalogVal_Change(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+    
+End Sub
+Private Sub PrintingLastCycle_Change()
+    
+On Error GoTo ErrorHandler
+
+If bReportMaster Then 'MC 2024-06-06 APG12091
+
+    If PrintingLastCycle.Value = 1 Then
+        strPrintLastCycle = "C:\Data\Print\LastCycle_" & Format(Now(), "yyyymmdd_hhmmss") & ".txt"  'On rising edge of Last Cycle Print Request, set the new file name
+        blnPrintLastCycle = True
+    Else
+        If bHMIDataToPrint.Value = 0 And blnPrintLastCycle Then                                     'On faling edge of Last Cycle Print Request, put CRC at the end of the file
+            blnPrintLastCycle = False
+            PutCRC (strPrintLastCycle)
+            PrintFile (strPrintLastCycle)
+        End If
+    End If
+End If 'MC 2024-01-31 APG12090 SSQ20230811918
+Exit Sub
+    
+ErrorHandler:
+    
+    LogDiagnosticsMessage "Error Last Cycle Printing request", ftDiagSeverityError, ftDiagAudienceEngineer
+    LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: PrintingLastCycle_Change(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+    
+End Sub
+Private Sub PutCRC(FileName As String)
+
+On Error GoTo ErrorHandler
+
+Dim strDataLine, strFileName As String, lStrLen, lCRC, lSeed As Long, i As Integer
+
+    lSeed = 20160413
+    strFileName = FileName
+    
+    'APG10000 DGB  2020-06-12 - Close All Opened Connection
+    Close
+    
+    Open strFileName For Input As #1
+        
+        While Not EOF(1)
+            Line Input #1, strDataLine                          ' read data 1 line at a time
+            
+            lStrLen = Len(strDataLine)
+            
+            For i = 1 To lStrLen
+            
+                lCRC = lCRC + Asc(strDataLine)                  ' Add all characters in file to get checksum
+                strDataLine = Right(strDataLine, lStrLen - i)
+                
+            Next
+            
+        Wend
+    
+    Close #1
+    
+    lCRC = (lCRC + lSeed) ^ 2                                   ' Compute sum of all characters and ramdom SEED to obfuscate CRC
+    
+    Open strFileName For Append As #1
+    
+    Print #1, "Checksum: " & lCRC                               ' Write CRC checksum at the end of the file
+    
+    Close #1
+
+Exit Sub
+
+ErrorHandler:
+    
+    LogDiagnosticsMessage "Error creating CRC", ftDiagSeverityError, ftDiagAudienceEngineer
+    LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: PutCRC(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+
+End Sub
+
+Private Sub RSView32SEIdleDetectControl1_EnterIdleState()
+
+End Sub
+Private Sub PrintFile(FileName As String)
+If bReportMaster Then 'APG12091 20240606 MC Local tag for report master load or unload
+    Dim xlApp As Object
+    Dim tmpString As String
+    Dim printerName As String 'MC 2024-01-31 APG12090 SSQ20230811918
+    
+    Set xlApp = CreateObject("WScript.shell")
+    printerName = HMITagGroup.Item("{[SterisPW]sPrinterName}").Value
+    'Print to PDF
+    tmpString = "NOTEPAD /PT """ & FileName & """ ""PDF24"""
+
+    'Open text file in notepad and send the print command to print to default printer
+    xlApp.Run (tmpString)
+        
+    'Print to USB coupon printer
+    tmpString = "NOTEPAD /PT " & Chr(34) & txtFileName.Caption & Chr(34) & " " & Chr(34) & printerName & Chr(34)  'MC 2024-01-31 APG12090 SSQ20230811918
+
+    'Open text file in notepad and send the print command to print to default printer
+    xlApp.Run (tmpString)
+    
+    Set xlApp = Nothing
+End If 'MC 2024-01-31 APG12090 SSQ20230811918
+End Sub
+
+Public Sub HMIAppCli_Login(ByVal UserName As String)
+   
+   Call GetCurrentUserName                      'Get Current User Name on Login
+   Call GetCurrentUserCode
+   
+End Sub
+
+Private Sub txtUserName_Click()
+
+End Sub
+
+Private Sub txtUserName1_Click()
+
+End Sub
+]]>
+            </vbaCode>
+        </vbaItem>
+    </vbaProject>
+</gfx>

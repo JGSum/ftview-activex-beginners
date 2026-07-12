@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gfx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Gfx-SE14.xsd">
+    <displaySettings displayType="replace" position="specifyPositionInPixels" positionX="0" positionY="0" securityCode="*" backColor="#F4F4F4" titleBar="false" maximumTagUpdateRate="0.1" focusHighlightColor="lime" disableFocusHighlight="true" size="specifySizeInPixels" width="20" height="20" allowMultipleRunningCopies="false" cacheAfterDisplaying="true" alwaysUpdating="true" sizeToMainWindow="false" showLastAcquiredValue="true" TrackScreenForNavigation="true" TrackName="" allowResizing="false" whenResized="scale" beepOnPress="false" highlightWhenCursorPassesOver="false" interactiveHighlightColor="black" displayOnScreenKeyboard="true" allowButtonActionOnError="true" fieldNotSelectedTextColor="black" fieldNotSelectedFillColor="white" fieldSelectedTextColor="black" fieldSelectedFillColor="white" fieldInErrorNotSelectedTextColor="black" fieldInErrorNotSelectedFillColor="red" fieldInErrorSelectedTextColor="white" fieldInErrorSelectedFillColor="red" startupCommand="" shutdownCommand="" useGradientStyle="false" endColor="teal" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+    <numericDisplay name="NumericDisplay_CycleRunning" height="23" width="14" left="210" top="15" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="14" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="1" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="{[Steris_Decon]Process.Running}"/>
+        </connections>
+    </numericDisplay>
+    <text name="Text1" height="22" width="120" left="80" top="15" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="true" alignment="middleLeft" fontFamily="Arial" fontSize="14" bold="false" italic="false" underline="false" strikethrough="false" caption="Cycle running:"/>
+    <numericDisplay name="NumericDisplay_Trigger" height="23" width="14" left="210" top="55" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="14" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="1" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="{::[Steris_Decon]Program:Printing.ReadyToPrint}"/>
+        </connections>
+    </numericDisplay>
+    <text name="Text2" height="22" width="103" left="80" top="55" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="true" alignment="middleLeft" fontFamily="Arial" fontSize="14" bold="false" italic="false" underline="false" strikethrough="false" caption="Print trigger:"/>
+    <stringDisplay name="StringDisplay_PrtString" height="16" width="900" left="210" top="100" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" justification="left" dimensionsHeight="1" dimensionsWidth="100" characterOffset="0">
+        <connections>
+            <connection name="Value" expression="{::[Steris_Decon]Program:Printing.Data_print}"/>
+        </connections>
+    </stringDisplay>
+    <text name="Text3" height="22" width="117" left="80" top="95" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="true" alignment="middleLeft" fontFamily="Arial" fontSize="14" bold="false" italic="false" underline="false" strikethrough="false" caption="String to print:"/>
+    <numericDisplay name="NumericDisplay_PrintingAct" height="23" width="14" left="425" top="175" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backColor="white" backStyle="transparent" foreColor="black" fontFamily="Arial" fontSize="14" bold="false" italic="false" underline="false" strikethrough="false" justification="right" fieldLength="1" showDigitGrouping="false" decimalPlaces="0" format="decimal" overflow="showExponent" leadingCharacter="blanks" decimalPlaceType="fixed">
+        <connections>
+            <connection name="Value" expression="{[Steris_Decon]PrintingACT}"/>
+        </connections>
+    </numericDisplay>
+    <text name="Text4" height="22" width="388" left="25" top="175" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="true" alignment="middleLeft" fontFamily="Arial" fontSize="14" bold="false" italic="false" underline="false" strikethrough="false" caption="PrintingACT tag (panel-pc is ready to receive):"/>
+    <vbaProject>
+        <vbaReferencesLink>
+            <!--All checked references on the references dialog box!-->
+            <vbaRefLink hash="ad542389a48a5aae612a313b3334f89f" TypeLib_Name="VBA" Description="Visual Basic For Applications">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBWAEIAQQAsACAARABlAHMAYwByAGkAcAB0AGkAbwBu
+AD0AVgBpAHMAdQBhAGwAIABCAGEAcwBpAGMAIABGAG8AcgAgAEEAcABwAGwAaQBjAGEAdABpAG8A
+bgBzACwAIABHAFUASQBEAD0AewAwADAAMAAyADAANABFAEYALQAwADAAMAAwAC0AMAAwADAAMAAt
+AEMAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADQANgB9ACwAIABNAGEAagBvAHIAVgBlAHIA
+cwBpAG8AbgA9ADQALAAgAE0AaQBuAG8AcgBWAGUAcgBzAGkAbwBuAD0AMAAsACAA
+]]>
+            </vbaRefLink>
+            <vbaRefLink hash="9bf92fbe175229b5f0601c4bf4381b5f" TypeLib_Name="DisplayClient" Description="RSView Display Client Object Model">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBEAGkAcwBwAGwAYQB5AEMAbABpAGUAbgB0ACwAIABE
+AGUAcwBjAHIAaQBwAHQAaQBvAG4APQBSAFMAVgBpAGUAdwAgAEQAaQBzAHAAbABhAHkAIABDAGwA
+aQBlAG4AdAAgAE8AYgBqAGUAYwB0ACAATQBvAGQAZQBsACwAIABHAFUASQBEAD0AewA4ADUANAA2
+ADkAMwA0ADAALQBGADEAOAA5AC0AMQAxAEQAMQAtADkAQwAxADcALQAwADAANgAwADkANwA3AEMA
+QQBBAEYAMQB9ACwAIABNAGEAagBvAHIAVgBlAHIAcwBpAG8AbgA9ADEALAAgAE0AaQBuAG8AcgBW
+AGUAcgBzAGkAbwBuAD0AMAAsACAA
+]]>
+            </vbaRefLink>
+            <vbaRefLink hash="b0d387d1804d29964988314e5c534502" TypeLib_Name="stdole" Description="OLE Automation">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBzAHQAZABvAGwAZQAsACAARABlAHMAYwByAGkAcAB0
+AGkAbwBuAD0ATwBMAEUAIABBAHUAdABvAG0AYQB0AGkAbwBuACwAIABHAFUASQBEAD0AewAwADAA
+MAAyADAANAAzADAALQAwADAAMAAwAC0AMAAwADAAMAAtAEMAMAAwADAALQAwADAAMAAwADAAMAAw
+ADAAMAAwADQANgB9ACwAIABNAGEAagBvAHIAVgBlAHIAcwBpAG8AbgA9ADIALAAgAE0AaQBuAG8A
+cgBWAGUAcgBzAGkAbwBuAD0AMAAsACAA
+]]>
+            </vbaRefLink>
+            <vbaRefLink hash="4d04292f7c12576e749760ecf5ac2ea8" TypeLib_Name="DisplayClientEx" Description="RSView Display Client Object Model">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBEAGkAcwBwAGwAYQB5AEMAbABpAGUAbgB0AEUAeAAs
+ACAARABlAHMAYwByAGkAcAB0AGkAbwBuAD0AUgBTAFYAaQBlAHcAIABEAGkAcwBwAGwAYQB5ACAA
+QwBsAGkAZQBuAHQAIABPAGIAagBlAGMAdAAgAE0AbwBkAGUAbAAsACAARwBVAEkARAA9AHsAOQBG
+ADcAMgA2ADcAQwAxAC0ANQA2ADcAQgAtADEAMQBEADMALQBBAEMAMwBCAC0AMAAwADYAMAA5ADcA
+RAA4AEMANwBFAEIAfQAsACAATQBhAGoAbwByAFYAZQByAHMAaQBvAG4APQAxACwAIABNAGkAbgBv
+AHIAVgBlAHIAcwBpAG8AbgA9ADAALAAgAA==]]>
+            </vbaRefLink>
+        </vbaReferencesLink>
+        <vbaItem>
+            <!--Item Name:ThisDisplay, Item Type:HostProjectItem-->
+            <encryptedData hash="8d11e2ea90dfed5a96a34bbe51e8b9ff">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[J05BTUU9VGhpc0Rpc3BsYXksVFlQRT0zDQpWRVJTSU9OIDEuMCBDTEFTUw0KQkVHSU4NCiAgTXVs
+dGlVc2UgPSAtMSAgJ1RydWUNCkVORA0KQXR0cmlidXRlIFZCX05hbWUgPSAiVGhpc0Rpc3BsYXki
+DQpBdHRyaWJ1dGUgVkJfR2xvYmFsTmFtZVNwYWNlID0gRmFsc2UNCkF0dHJpYnV0ZSBWQl9DcmVh
+dGFibGUgPSBGYWxzZQ0KQXR0cmlidXRlIFZCX1ByZWRlY2xhcmVkSWQgPSBUcnVlDQpBdHRyaWJ1
+dGUgVkJfRXhwb3NlZCA9IFRydWUNCg==]]>
+            </encryptedData>
+            <vbaCode>
+                <![CDATA[Public filetxt As String
+Public line As String
+
+Private Sub Display_AnimationStart()
+On Error GoTo ErrorHandler
+    Dim objFSO, strFolder
+    
+    
+    'If folder does not exist, then create it
+    strFolder = "C:\Data\"
+    Set objFSO = CreateObject("Scripting.FileSystemObject")
+    If Not objFSO.FolderExists(strFolder) Then
+       objFSO.CreateFolder (strFolder)
+    End If
+
+    filetxt = "C:\Data\Reprint.txt"
+    
+    If Not objFSO.FileExists(filetxt) Then
+       Open filetxt For Output As #1
+       Close #1
+    End If
+    
+Exit Sub
+ErrorHandler:
+    LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: Display_AnimationStart(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+    Resume Next
+End Sub
+
+Private Sub NumericDisplay_PrintingAct_Change()
+On Error GoTo ErrorHandler
+    If NumericDisplay_PrintingAct.Value = 0 Then
+    
+        'Wait for 5 seconds to make sure HMI client has loaded completely before continuing printing
+        Dim PauseTime, Start, Finish, TotalTime
+        PauseTime = 5    ' Set duration.
+        Start = Timer    ' Set start time.
+        Do While Timer < Start + PauseTime
+            DoEvents    ' Yield to other processes.
+        Loop
+        
+        ExecuteCommand "Set {[Steris_Decon]PrintingACT} 1"
+    End If
+    
+Exit Sub
+ErrorHandler:
+    LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: NumericDisplay_PrintingAct_Change(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+    Resume Next
+End Sub
+
+Private Sub NumericDisplay_Trigger_Change()
+On Error GoTo ErrorHandler
+    If (NumericDisplay_CycleRunning.Value = 1) And (NumericDisplay_PrintingAct.Value = 1) Then
+        If NumericDisplay_Trigger.Value = 1 Then
+            line = StringDisplay_PrtString.Value
+            Open filetxt For Append As #1
+            Print #1, "" & line 'add line to txt file
+            Close #1
+            ExecuteCommand "Set {::[Steris_Decon]Program:Printing.PrintingDone} 1"
+        End If
+    End If
+    
+Exit Sub
+ErrorHandler:
+    LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: NumericDisplay_Trigger_Change(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+    Resume Next
+End Sub
+]]>
+            </vbaCode>
+        </vbaItem>
+    </vbaProject>
+</gfx>

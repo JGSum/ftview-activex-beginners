@@ -1,6 +1,6 @@
 # Lesson 7 — PLC cycle report and print pipeline (HMI → PLC → PDF24)
 
-**From real lab:** Curia ABQ Steris simulation — `BX45183A_lab.L5X` (Decon) and `GMP_Lab_lab.L5X` (Parts Washer) on FactoryTalk Logix Echo. L5X exports: `Curia_ABQ/ACDs/`.
+**From real lab:** Curia ABQ Steris simulation — `reference/plc/BX45183A_lab.L5X` (Decon) and `GMP_Lab_lab.L5X` (Parts Washer) on FactoryTalk Logix Echo.
 
 This lesson is **PLC-heavy**. The HMI and PDF24 steps exist, but the report **content** and **timing** are decided in Logix.
 

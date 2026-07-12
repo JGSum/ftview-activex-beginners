@@ -18,7 +18,7 @@ Confirm you are on the **lab VM**, not production.
 |------|----------|
 | Decon PLC | `BX45183A_lab` @ `192.168.100.70` |
 | PW PLC | `GMP_Lab_lab` @ `192.168.100.100` |
-| L5X exports (reference) | `Curia_ABQ/ACDs/BX45183A_lab.L5X`, `GMP_Lab_lab.L5X` |
+| L5X exports (reference) | `reference/plc/BX45183A_lab.L5X`, `GMP_Lab_lab.L5X` |
 | HMI | `4401_HMI_Server` / `ABQ4401FTV` — Decon + PW clients |
 
 ---

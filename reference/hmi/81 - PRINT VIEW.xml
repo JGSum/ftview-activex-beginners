@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gfx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Gfx-SE14.xsd">
+    <displaySettings displayType="replace" position="specifyPositionInPixels" positionX="0" positionY="0" securityCode="*" backColor="white" titleBar="false" maximumTagUpdateRate="0.25" focusHighlightColor="lime" disableFocusHighlight="true" size="specifySizeInPixels" width="800" height="540" allowMultipleRunningCopies="false" cacheAfterDisplaying="false" sizeToMainWindow="false" showLastAcquiredValue="true" TrackScreenForNavigation="true" TrackName="" allowResizing="false" whenResized="scale" beepOnPress="false" highlightWhenCursorPassesOver="false" interactiveHighlightColor="black" displayOnScreenKeyboard="false" allowButtonActionOnError="true" fieldNotSelectedTextColor="black" fieldNotSelectedFillColor="white" fieldSelectedTextColor="black" fieldSelectedFillColor="white" fieldInErrorNotSelectedTextColor="black" fieldInErrorNotSelectedFillColor="red" fieldInErrorSelectedTextColor="white" fieldInErrorSelectedFillColor="red" startupCommand="" shutdownCommand="" useGradientStyle="false" endColor="teal" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+    
+    
+    <group name="Group2" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false">
+        <panel name="Panel2" height="45" width="115" left="550" top="486" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="solid" patternStyle="none" backColor="#F0F0F0" patternColor="white" blink="false" description="" borderColor="#A0A0A4" borderStyle="raised" borderWidth="2" borderUsesBackColor="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+        <text name="Text2" height="32" width="42" left="586" top="492" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="silver" wordWrap="true" sizeToFit="true" alignment="middleCenter" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="PRINT &#xA;FILE"/>
+    </group>
+    <group name="Group9" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false">
+        <panel name="Panel6" height="45" width="140" left="395" top="485" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="solid" patternStyle="none" backColor="#F0F0F0" patternColor="white" blink="false" description="" borderColor="#A0A0A4" borderStyle="raised" borderWidth="2" borderUsesBackColor="false" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+        <text name="Text8" height="32" width="109" left="406" top="491" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="silver" wordWrap="true" sizeToFit="true" alignment="middleCenter" fontFamily="Arial" charHeight="16" charWidth="7" bold="false" italic="false" underline="false" strikethrough="false" caption="TRANSFER ALL&#xA;FILES TO USB"/>
+    </group>
+    <button name="btnCloseFile" height="45" width="115" left="675" top="485" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" style="3d" captureCursor="false" highlightOnFocus="true" tabIndex="8">
+        <command pressAction="" repeatAction="" releaseAction="" repeatRate="0.25"/>
+        <up patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="CLOSE&#xA;FILE"/>
+            <imageSettings imageReference="noImage"/>
+        </up>
+        <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+            <imageSettings imageReference="noImage"/>
+        </down>
+        <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+            <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+            <imageSettings imageReference="noImage"/>
+        </confirm>
+        <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+            <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        </useVariable>
+    </button>
+    <text name="Text7" height="30" width="660" left="140" top="5" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="navy" wordWrap="true" sizeToFit="false" alignment="middleCenter" fontFamily="Arial" fontSize="16" bold="true" italic="false" underline="false" strikethrough="false" caption="PRINT VIEWER"/>
+    <text name="Text1" height="16" width="44" left="145" top="5" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="false" alignment="middleLeft" fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="81"/>
+    <button name="btnViewFile" height="45" width="115" left="675" top="485" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" style="3d" captureCursor="false" highlightOnFocus="true" tabIndex="7">
+        <command pressAction="" repeatAction="" releaseAction="" repeatRate="0.25"/>
+        <up patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="VIEW&#xA;FILE"/>
+            <imageSettings imageReference="noImage"/>
+        </up>
+        <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+            <imageSettings imageReference="noImage"/>
+        </down>
+        <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+            <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+            <imageSettings imageReference="noImage"/>
+        </confirm>
+        <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+            <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        </useVariable>
+    </button>
+    <button name="btnPrintFile" height="45" width="115" left="550" top="485" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" style="3d" captureCursor="false" highlightOnFocus="true" tabIndex="9">
+        <command pressAction="" repeatAction="" releaseAction="" repeatRate="0.25"/>
+        <up patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="PRINT&#xA;FILE"/>
+            <imageSettings imageReference="noImage"/>
+        </up>
+        <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+            <imageSettings imageReference="noImage"/>
+        </down>
+        <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+            <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+            <imageSettings imageReference="noImage"/>
+        </confirm>
+        <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+            <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        </useVariable>
+    </button>
+    <text name="txtFileName" height="18" width="80" left="151" top="35" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backStyle="transparent" backColor="white" foreColor="black" wordWrap="true" sizeToFit="true" alignment="middleCenter" fontFamily="Arial" fontSize="12" bold="false" italic="false" underline="false" strikethrough="false" caption="FILENAME"/>
+    <button name="btnTransferFiles" height="45" width="140" left="395" top="485" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" style="3d" captureCursor="false" highlightOnFocus="true" tabIndex="10">
+        <command pressAction="" repeatAction="" releaseAction="" repeatRate="0.25"/>
+        <up patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption="TRANSFER ALL&#xA;FILES TO NETWORK"/>
+            <imageSettings imageReference="noImage"/>
+        </up>
+        <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+            <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+            <imageSettings imageReference="noImage"/>
+        </down>
+        <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+        <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+            <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+            <imageSettings imageReference="noImage"/>
+        </confirm>
+        <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+            <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+        </useVariable>
+        <animations>
+            <animateVisibility expression="{::[SterisPW]Program:MainProgram.abSeqRun[1]} AND CurrentUserHasCode( A )" expressionTrueState="visible"/>
+        </animations>
+    </button>
+    <text name="txtFileSecured" height="24" width="126" left="665" top="30" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backStyle="solid" backColor="lime" foreColor="black" wordWrap="true" sizeToFit="true" alignment="middleCenter" fontFamily="Arial" fontSize="16" bold="true" italic="false" underline="false" strikethrough="false" caption="File Secured"/>
+    <text name="txtFileNotSecured" height="24" width="163" left="625" top="30" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backStyle="solid" backColor="red" foreColor="black" wordWrap="true" sizeToFit="true" alignment="middleRight" fontFamily="Arial" fontSize="16" bold="true" italic="false" underline="false" strikethrough="false" caption="File not secured"/>
+    <text name="txtDriveAvail" height="19" width="220" left="175" top="495" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" isReferenceObject="false" backStyle="solid" backColor="yellow" foreColor="black" wordWrap="true" sizeToFit="false" alignment="middleCenter" fontFamily="Arial" fontSize="12" bold="true" italic="false" underline="false" strikethrough="false" caption="Folder not available"/>
+    
+    <group name="Group1" visible="true" wallpaper="false" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="CycleRunMernu.Group1" linkToolTipText="false">
+        <panel name="Panel1" height="540" width="140" left="0" top="0" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="CycleRunMernu.Panel1" linkToolTipText="false" backStyle="solid" patternStyle="none" backColor="#EBEBEB" patternColor="white" blink="false" description="" borderColor="navy" borderStyle="raised" borderWidth="2" borderUsesBackColor="true" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight"/>
+        <button name="ButtonAnalogInput" height="50" width="120" left="9" top="68" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="CycleRunMernu.ButtonAnalogInput" linkToolTipText="false" style="3d" captureCursor="false" highlightOnFocus="true" tabIndex="1">
+            <command pressAction="" repeatAction="" releaseAction="Display &quot;50 - CYCLE SELECT&quot;  /W 1280 /H 740" repeatRate="0.25"/>
+            <up patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="11" bold="false" italic="false" underline="false" strikethrough="false" caption="CYCLE SELECT&#xA;&amp; START"/>
+                <imageSettings imageReference="noImage"/>
+            </up>
+            <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+                <imageSettings imageReference="noImage"/>
+            </down>
+            <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+            <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+                <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                    <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                    <imageSettings imageReference="noImage"/>
+                </confirm>
+                <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+                <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            </useVariable>
+        </button>
+        <button name="ButtonCounters" height="50" width="120" left="9" top="9" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="CycleRunMernu.ButtonCounters" linkToolTipText="false" style="3d" captureCursor="false" highlightOnFocus="true" tabIndex="2">
+            <command pressAction="" repeatAction="" releaseAction="Display 60 - CYCLE STATUS  /W 1280 /H 740" repeatRate="0.25"/>
+            <up patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="12" bold="false" italic="false" underline="false" strikethrough="false" caption="CYCLE&#xA;STATUS"/>
+                <imageSettings imageReference="noImage"/>
+            </up>
+            <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+                <imageSettings imageReference="noImage"/>
+            </down>
+            <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+            <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+                <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                    <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                    <imageSettings imageReference="noImage"/>
+                </confirm>
+                <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+                <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            </useVariable>
+        </button>
+        <button name="ButtonCommonSettings1" height="50" width="120" left="9" top="127" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="CycleRunMernu.ButtonCommonSettings1" linkToolTipText="false" style="3d" captureCursor="false" highlightOnFocus="false" tabIndex="3">
+            <command pressAction="" repeatAction="" releaseAction="If ({[SterisPW]udtHardwareConfig.dMdl} == 2 ) then&#xA;;Display &quot;61-  PROCESS_680PG&quot;  /W 1280 /H 740&#xA;else&#xA;;Display &quot;63-  PROCESS_380PG_480PG&quot;  /W 1280 /H 740&#xA;endif" repeatRate="0.25"/>
+            <up patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="12" bold="false" italic="false" underline="false" strikethrough="false" caption="PROCESS&#xA;SCREEN"/>
+                <imageSettings imageReference="noImage"/>
+            </up>
+            <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+                <imageSettings imageReference="noImage"/>
+            </down>
+            <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+            <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+                <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                    <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                    <imageSettings imageReference="noImage"/>
+                </confirm>
+                <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+                <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            </useVariable>
+        </button>
+        <button name="Button3" height="50" width="120" left="9" top="481" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="CycleRunMernu.Button3" linkToolTipText="false" style="3d" captureCursor="true" highlightOnFocus="true" tabIndex="6">
+            <action type="toggle" tag="{[SterisPW]aiPushButtonFromHMI[7].14}"/>
+            <up patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="12" bold="false" italic="false" underline="false" strikethrough="false" caption="INTERIOR&#xA;LIGHT"/>
+                <imageSettings imageReference="noImage"/>
+            </up>
+            <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+                <imageSettings imageReference="noImage"/>
+            </down>
+            <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+            <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+                <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                    <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                    <imageSettings imageReference="noImage"/>
+                </confirm>
+                <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+                <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            </useVariable>
+            <animations>
+                <animateColor expression="{[SterisPW]aiHMIValues2[133].9}" blinkRate="2">
+                    <color value="0" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="#F0F0F0" backColor2="#F0F0F0" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="1" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="lime" backColor2="lime" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                </animateColor>
+            </animations>
+        </button>
+        <button name="ButtonCommonSettings3" height="50" width="120" left="9" top="246" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="CycleRunMernu.ButtonCommonSettings3" linkToolTipText="false" style="3d" captureCursor="false" highlightOnFocus="false" tabIndex="5">
+            <command pressAction="" repeatAction="" releaseAction="Display &quot;21 - DOOR OBSTRUCTION SW TEST 2&quot;  /W 1280 /H 740" repeatRate="0.25"/>
+            <up patternColor="black" patternStyle="none" backColor="lime" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="12" bold="false" italic="false" underline="false" strikethrough="false" caption="DOOR&#xA;SW CHECK"/>
+                <imageSettings imageReference="noImage"/>
+            </up>
+            <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+                <imageSettings imageReference="noImage"/>
+            </down>
+            <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+            <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+                <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                    <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                    <imageSettings imageReference="noImage"/>
+                </confirm>
+                <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+                <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            </useVariable>
+            <animations>
+                <animateVisibility expression="({[SterisPW]udtHardwareConfig.dMdl} == 2) OR&#xA;({::[SterisPW]Program:MainProgram.abSeqDoorCheck[0]} OR &#xA;{::[SterisPW]Program:MainProgram.abSeqDoorCheck[2]})" expressionTrueState="invisible"/>
+                <animateColor expression="1" blinkRate="2">
+                    <color value="0" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="solid" backColor1="red" backColor2="red" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                    <color value="1" foreBehavior="solid" foreColor1="black" foreColor2="black" backBehavior="blink" backColor1="lime" backColor2="#F0F0F0" fillColorMode="2" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight" fillEndColor="white" fillGradientStop="50" fillGradientDirection="gradientDirectionHorizontal" fillGradientShadingStyle="gradientHorizontalFromRight"/>
+                </animateColor>
+            </animations>
+        </button>
+        <button name="ButtonCounters1" height="50" width="120" left="9" top="187" visible="true" toolTipText="" exposeToVba="notExposed" isReferenceObject="true" linkSize="true" linkConnections="true" linkAnimations="linkWithExpression" linkBaseObject="CycleRunMernu.ButtonCounters1" linkToolTipText="true" style="3d" captureCursor="false" highlightOnFocus="true" tabIndex="4">
+            <command pressAction="" repeatAction="" releaseAction="Display 80 - PRINT MENU  /W 1280 /H 740" repeatRate="0.25"/>
+            <up patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="12" bold="false" italic="false" underline="false" strikethrough="false" caption="PRINT&#xA;MENU"/>
+                <imageSettings imageReference="noImage"/>
+            </up>
+            <down downSameAsUp="true" patternColor="black" patternStyle="none" backColor="#F0F0F0" backStyle="solid" foreColor="black" endColor="white" gradientStop="50" gradientDirection="gradientDirectionHorizontal" gradientShadingStyle="gradientHorizontalFromRight">
+                <caption fontFamily="Arial" fontSize="10" bold="false" italic="false" underline="false" strikethrough="false" caption=""/>
+                <imageSettings imageReference="noImage"/>
+            </down>
+            <ability showDisabledState="false" expression="" enabledWhenExpressionIsTrue="true" disabledImageType="useGrayscale"/>
+            <confirm confirmAction="false" buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                <imageSettings imageReference="noImage"/>
+            </confirm>
+            <eSignature requireElectronicSignature="false" allowBlankComment="false" requireReAuthentication="false" requireCounterSignature="false" authorizedGroup="" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            <useVariable requireUseVariable="false" tagName="" confirmationValue="1" eSigValue1="2" eSigValue2="3">
+                <confirm buttonSetting="okCancel" titleBar="true" titleBarText="Confirmation" windowPosition="Centered of screen">
+                    <caption fontFamily="Arial Unicode MS" fontSize="13" bold="false" italic="false" underline="false" strikethrough="false" caption="Are you sure you want to perform this action?"/>
+                    <imageSettings imageReference="noImage"/>
+                </confirm>
+                <eSignature_1 allowBlankComment="false" requireReAuthentication="false" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+                <eSignature_2 allowBlankComment="false" authorizedGroup="Administrators" ShowConfirmationMessage="false" ConfirmationMessage="By completing this action, I certify that I have reviewed the changes that will be made to the system. I have approval and permission to perform this change."/>
+            </useVariable>
+        </button>
+    </group><activeX name="lbDirectoryFiles" height="450" width="640" left="150" top="30" visible="true" wallpaper="false" toolTipText="" exposeToVba="vbaControl" classId="{8BD21D20-EC42-11CE-9E0D-00AA006002F3}" keyNavigation="false" focusHighlight="false" pointerHighlight="false" tabIndex="11">
+        <data progId="Forms.ListBox.1" fileName="FM20.dll" fileVersion="16.0.10357.20081" typeLibrary="{0D452EE1-E08F-101A-852E-02608C4D0BB4}" typeLibVersion="2.0" data="AAIUAGABAYAAAAAAAwIAACVCAAAKLQAAAAIgADUAAAAQAACAwwAAAAACAABBcmlhbCBVbmlj&#xA;b2RlIE1T"/>
+    </activeX>
+<activeX name="lbViewFile" height="450" width="640" left="151" top="30" visible="false" wallpaper="false" toolTipText="" exposeToVba="vbaControl" classId="{8BD21D20-EC42-11CE-9E0D-00AA006002F3}" keyNavigation="false" focusHighlight="false" pointerHighlight="false" tabIndex="12">
+        <data progId="Forms.ListBox.1" fileName="FM20.dll" fileVersion="16.0.10357.20081" typeLibrary="{0D452EE1-E08F-101A-852E-02608C4D0BB4}" typeLibVersion="2.0" data="AAIUAGABAYAAAAAAAwIAACVCAACCLgAAAAIgADUAAAAQAACAwwAAAAACAABBcmlhbCBVbmlj&#xA;b2RlIE1T"/>
+    </activeX>
+<vbaProject>
+        <vbaReferencesLink>
+            <!--All checked references on the references dialog box!-->
+            <vbaRefLink hash="ad542389a48a5aae612a313b3334f89f" TypeLib_Name="VBA" Description="Visual Basic For Applications">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBWAEIAQQAsACAARABlAHMAYwByAGkAcAB0AGkAbwBu
+AD0AVgBpAHMAdQBhAGwAIABCAGEAcwBpAGMAIABGAG8AcgAgAEEAcABwAGwAaQBjAGEAdABpAG8A
+bgBzACwAIABHAFUASQBEAD0AewAwADAAMAAyADAANABFAEYALQAwADAAMAAwAC0AMAAwADAAMAAt
+AEMAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADQANgB9ACwAIABNAGEAagBvAHIAVgBlAHIA
+cwBpAG8AbgA9ADQALAAgAE0AaQBuAG8AcgBWAGUAcgBzAGkAbwBuAD0AMAAsACAA
+]]>
+            </vbaRefLink>
+            <vbaRefLink hash="9bf92fbe175229b5f0601c4bf4381b5f" TypeLib_Name="DisplayClient" Description="RSView Display Client Object Model">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBEAGkAcwBwAGwAYQB5AEMAbABpAGUAbgB0ACwAIABE
+AGUAcwBjAHIAaQBwAHQAaQBvAG4APQBSAFMAVgBpAGUAdwAgAEQAaQBzAHAAbABhAHkAIABDAGwA
+aQBlAG4AdAAgAE8AYgBqAGUAYwB0ACAATQBvAGQAZQBsACwAIABHAFUASQBEAD0AewA4ADUANAA2
+ADkAMwA0ADAALQBGADEAOAA5AC0AMQAxAEQAMQAtADkAQwAxADcALQAwADAANgAwADkANwA3AEMA
+QQBBAEYAMQB9ACwAIABNAGEAagBvAHIAVgBlAHIAcwBpAG8AbgA9ADEALAAgAE0AaQBuAG8AcgBW
+AGUAcgBzAGkAbwBuAD0AMAAsACAA
+]]>
+            </vbaRefLink>
+            <vbaRefLink hash="b0d387d1804d29964988314e5c534502" TypeLib_Name="stdole" Description="OLE Automation">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBzAHQAZABvAGwAZQAsACAARABlAHMAYwByAGkAcAB0
+AGkAbwBuAD0ATwBMAEUAIABBAHUAdABvAG0AYQB0AGkAbwBuACwAIABHAFUASQBEAD0AewAwADAA
+MAAyADAANAAzADAALQAwADAAMAAwAC0AMAAwADAAMAAtAEMAMAAwADAALQAwADAAMAAwADAAMAAw
+ADAAMAAwADQANgB9ACwAIABNAGEAagBvAHIAVgBlAHIAcwBpAG8AbgA9ADIALAAgAE0AaQBuAG8A
+cgBWAGUAcgBzAGkAbwBuAD0AMAAsACAA
+]]>
+            </vbaRefLink>
+            <vbaRefLink hash="4d04292f7c12576e749760ecf5ac2ea8" TypeLib_Name="DisplayClientEx" Description="RSView Display Client Object Model">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBEAGkAcwBwAGwAYQB5AEMAbABpAGUAbgB0AEUAeAAs
+ACAARABlAHMAYwByAGkAcAB0AGkAbwBuAD0AUgBTAFYAaQBlAHcAIABEAGkAcwBwAGwAYQB5ACAA
+QwBsAGkAZQBuAHQAIABPAGIAagBlAGMAdAAgAE0AbwBkAGUAbAAsACAARwBVAEkARAA9AHsAOQBG
+ADcAMgA2ADcAQwAxAC0ANQA2ADcAQgAtADEAMQBEADMALQBBAEMAMwBCAC0AMAAwADYAMAA5ADcA
+RAA4AEMANwBFAEIAfQAsACAATQBhAGoAbwByAFYAZQByAHMAaQBvAG4APQAxACwAIABNAGkAbgBv
+AHIAVgBlAHIAcwBpAG8AbgA9ADAALAAgAA==]]>
+            </vbaRefLink>
+            <vbaRefLink hash="ee18a101b81dc7b3ee4fa6143ea22f3a" TypeLib_Name="MSForms" Description="Microsoft Forms 2.0 Object Library">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[VAB5AHAAZQBMAGkAYgBfAE4AYQBtAGUAPQBNAFMARgBvAHIAbQBzACwAIABEAGUAcwBjAHIAaQBw
+AHQAaQBvAG4APQBNAGkAYwByAG8AcwBvAGYAdAAgAEYAbwByAG0AcwAgADIALgAwACAATwBiAGoA
+ZQBjAHQAIABMAGkAYgByAGEAcgB5ACwAIABHAFUASQBEAD0AewAwAEQANAA1ADIARQBFADEALQBF
+ADAAOABGAC0AMQAwADEAQQAtADgANQAyAEUALQAwADIANgAwADgAQwA0AEQAMABCAEIANAB9ACwA
+IABNAGEAagBvAHIAVgBlAHIAcwBpAG8AbgA9ADIALAAgAE0AaQBuAG8AcgBWAGUAcgBzAGkAbwBu
+AD0AMAAsACAA
+]]>
+            </vbaRefLink>
+        </vbaReferencesLink>
+        <vbaItem>
+            <!--Item Name:ThisDisplay, Item Type:HostProjectItem-->
+            <encryptedData hash="8d11e2ea90dfed5a96a34bbe51e8b9ff">
+                <!--The following VBA code is encoded.Please do not edit or import will fail.-->
+                <![CDATA[J05BTUU9VGhpc0Rpc3BsYXksVFlQRT0zDQpWRVJTSU9OIDEuMCBDTEFTUw0KQkVHSU4NCiAgTXVs
+dGlVc2UgPSAtMSAgJ1RydWUNCkVORA0KQXR0cmlidXRlIFZCX05hbWUgPSAiVGhpc0Rpc3BsYXki
+DQpBdHRyaWJ1dGUgVkJfR2xvYmFsTmFtZVNwYWNlID0gRmFsc2UNCkF0dHJpYnV0ZSBWQl9DcmVh
+dGFibGUgPSBGYWxzZQ0KQXR0cmlidXRlIFZCX1ByZWRlY2xhcmVkSWQgPSBUcnVlDQpBdHRyaWJ1
+dGUgVkJfRXhwb3NlZCA9IFRydWUNCg==]]>
+            </encryptedData>
+            <vbaCode>
+                <![CDATA[Dim FileName As String
+Private Permission As Boolean
+Private AllDisplays As Displays
+Private WithEvents HMIAppCli As DisplayClient.Application    'app events used to update real time status
+Attribute HMIAppCli.VB_VarHelpID = -1
+
+
+Private Sub btnViewFile_Released()
+    Dim DataLine As String
+    
+    If lbDirectoryFiles.ListIndex <> -1 Then
+    
+        ' Modify visiblity of the screen elements
+        lbDirectoryFiles.Visible = False
+        lbViewFile.Visible = True
+        btnViewFile.Visible = False
+        btnCloseFile.Visible = True
+        btnPrintFile.Visible = True
+        btnTransferFiles.Visible = False
+        
+        'Clear the file viewer listbox
+        lbViewFile.Clear
+    
+        'Get the required file name
+        FileName = "C:\Data\Print\" & lbDirectoryFiles.List(lbDirectoryFiles.ListIndex)
+        
+        txtFileName.Caption = FileName
+        txtFileName.Visible = True
+        
+        'Open the file and read each line
+        Open FileName For Input As #1
+        
+        While Not EOF(1)
+            Line Input #1, DataLine ' read in data 1 line at a time
+            lbViewFile.AddItem DataLine
+        Wend
+    
+        Close #1
+
+    End If
+    
+    VerifyCRC
+    
+End Sub
+
+Private Sub Display_AnimationStart()
+
+    Dim file As Variant
+    
+    Set AllDisplays = LoadedDisplays                                '   Load All Displays
+    
+    Set HMIAppCli = Me.Application
+    
+
+    ' Modify visiblity of the screen elements
+    lbDirectoryFiles.Visible = True
+    lbViewFile.Visible = False
+    btnViewFile.Visible = True
+    btnCloseFile.Visible = False
+    btnPrintFile.Visible = False
+    txtFileName.Visible = False
+    txtFileNotSecured.Visible = False
+    txtFileSecured.Visible = False
+    
+    Permission = AllDisplays.Item("HEADER").blnSecurityEngineer
+
+    
+    If Permission Then
+    btnTransferFiles.Visible = True
+    Else
+    btnTransferFiles.Visible = False
+    End If
+        
+    file = Dir("C:\Data\Print\")
+    
+    'Read name of each file in data folder
+    While (file <> "")
+        lbDirectoryFiles.AddItem file
+        file = Dir
+    Wend
+
+    'Reset message visibility
+    txtDriveAvail.Visible = False
+    
+End Sub
+
+Private Sub btnCloseFile_Released()
+
+    ' Modify visiblity of the screen elements
+    lbDirectoryFiles.Visible = True
+    txtFileName.Visible = False
+    lbViewFile.Visible = False
+    btnViewFile.Visible = True
+    btnCloseFile.Visible = False
+    btnPrintFile.Visible = False
+    txtFileNotSecured.Visible = False
+    txtFileSecured.Visible = False
+    btnTransferFiles.Visible = True
+    
+End Sub
+Private Sub btnPrintFile_Released()
+
+If AllDisplays.Item("HEADER").bReportMaster Then 'MC 2024-06-06 APG12091
+    Dim xlApp As Object
+    Dim tmpString As String
+    Dim printerName As String 'MC 2024-01-31 APG12090 SSQ20230811918
+
+    Set xlApp = CreateObject("WScript.shell")
+    printerName = AllDisplays.Item("HEADER").HMITagGroup.Item("{[SterisPW]sPrinterName}").Value
+    'Print to PDF
+    tmpString = "NOTEPAD /PT """ & txtFileName.Caption & """ ""PDFCreator"""
+    'Open text file in notepad and send the print command to print to default printer
+    xlApp.Run (tmpString)
+    
+    'Print to USB coupon printer
+    tmpString = "NOTEPAD /PT " & Chr(34) & txtFileName.Caption & Chr(34) & " " & Chr(34) & printerName & Chr(34)  'MC 2024-01-31 APG12090 SSQ20230811918
+    'Open text file in notepad and send the print command to print to default printer
+    xlApp.Run (tmpString)
+    
+    Set xlApp = Nothing
+Else
+    MsgBox ("This HMI is not the Report Master")
+End If 'MC 2024-01-31 APG12090 SSQ20230811918
+End Sub
+Private Sub btnTransferFiles_Released()
+    
+    Dim file, filePDF As Variant, strFrom, strTo, strFromPDF As String
+    
+    strFrom = "C:\Data\Print\"
+    strFromPDF = "C:\Data\PDF\"
+    strTo = AllDisplays.Item("HEADER").HMITagGroup.Item("{[SterisPW]sRemoteNetworkPath}").Value   'MC 2024-01-31 APG12090 SSQ20230811918 changed D:\ to a variable
+    file = Dir(strFrom)
+    filePDF = Dir(strFromPDF)
+    
+    Set FSO = CreateObject("Scripting.FileSystemObject")
+    
+    'Move each file to USB folder
+    If FSO.FolderExists(strTo) Then
+        'Reset message visibility
+        txtDriveAvail.Visible = False
+    
+        While (file <> "")
+            Name strFrom & file As strTo & file
+            file = Dir(strFrom)
+        Wend
+        lbDirectoryFiles.Clear
+        
+        While (filePDF <> "")
+            Name strFromPDF & filePDF As strTo & filePDF
+            filePDF = Dir(strFromPDF)
+        Wend
+        lbDirectoryFiles.Clear
+        
+    Else
+        txtDriveAvail.Visible = True
+    End If
+    
+End Sub
+
+Private Sub VerifyCRC()
+
+Dim strDataLine, strFileName, strLastLine As String, lStrLen, lCRC, lTemp, lSeed As Long, i As Integer
+
+    strFileName = txtFileName.Caption
+    lSeed = 20160413
+    
+    If strFileName <> "FILENAME" Then
+        Open strFileName For Input As #1
+            
+            lCRC = 0
+            lTemp = 0
+            
+            While Not EOF(1)
+                lCRC = lCRC + lTemp
+                lTemp = 0
+                Line Input #1, strDataLine                          ' read data 1 line at a time
+                strLastLine = strDataLine
+                
+                lStrLen = Len(strDataLine)
+                
+                For i = 1 To lStrLen
+                    
+                    lTemp = lTemp + Asc(strDataLine)                'Compute each character ASCII value to get checksum
+                    strDataLine = Right(strDataLine, lStrLen - i)
+                    
+                Next
+                
+            Wend
+            
+            lCRC = (lCRC + lSeed) ^ 2                               'Compute sum and random SEED to get the CRC checksum value
+            
+            If strLastLine = ("Checksum: " & lCRC) Then             'Compare file's checksum and computed checksum
+                txtFileSecured.Visible = True                       'If checksums are the same, file is secured
+                txtFileNotSecured.Visible = False
+            Else
+                txtFileSecured.Visible = False                      'If checksums are different, file is not secured
+                txtFileNotSecured.Visible = True
+            End If
+        
+        Close #1
+    End If
+    
+End Sub
+
+
+Private Sub HMIAppCli_Login(ByVal UserName As String)
+   
+    Call GetCurrentUserCode
+    Call SetObjectSecurity
+   
+End Sub
+Public Sub GetCurrentUserCode() '   Extract Curent User Security Code
+
+    AllDisplays.Item("HEADER").blnSecurityEngineer = HMIAppCli.Application.CurrentUserHasCode("A")
+    AllDisplays.Item("HEADER").blnSecuritySupervisor = HMIAppCli.Application.CurrentUserHasCode("B")
+    AllDisplays.Item("HEADER").blnSecurityOperator = HMIAppCli.Application.CurrentUserHasCode("C")
+    AllDisplays.Item("HEADER").blnSecurityGuest = HMIAppCli.Application.CurrentUserHasCode("D")
+    AllDisplays.Item("HEADER").blnSecurityMaintenance = HMIAppCli.Application.CurrentUserHasCode("E")
+    
+End Sub
+
+Private Sub SetObjectSecurity()
+
+On Error GoTo ErrorHandler
+
+Permission = AllDisplays.Item("HEADER").blnSecurityEngineer Or AllDisplays.Item("HEADER").blnSecurityMaintenance Or AllDisplays.Item("HEADER").blnSecuritySupervisor Or AllDisplays.Item("HEADER").blnSecurityOperator
+
+If Permission Then
+
+    btnPrintFile.Visible = True
+    
+Else
+
+   btnPrintFile.Visible = False
+
+    
+End If
+       
+Exit Sub
+       
+ErrorHandler:
+    LogDiagnosticsMessage "VBA Error - Screen Name: " & Me.FullName & ", Procedure Name: SetObjectSecurity(): " & Hex(Err.Number) & " - " & Err.Description, ftDiagSeverityError
+    Resume Next
+End Sub
+
+Private Sub lbDirectoryFiles_Click()
+
+End Sub
+
+Private Sub Text7_Click()
+
+End Sub
+Private Sub lbViewFile_Click()
+
+End Sub
+]]>
+            </vbaCode>
+        </vbaItem>
+    </vbaProject>
+</gfx>

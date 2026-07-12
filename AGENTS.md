@@ -25,14 +25,14 @@ This repo holds **explanations and lab steps**. The running lab, session logs, a
 
 ### Writing new lessons or labs
 
-- Anchor examples to **verified Steris lab artifacts**: `BX45183A_lab`, `GMP_Lab_lab`, Echo `.70` / `.100`, `4401_HMI_Server` / `ABQ4401FTV`, tag names from `Curia_ABQ/ACDs/*.L5X`.
+- Anchor examples to **verified Steris lab artifacts**: `BX45183A_lab`, `GMP_Lab_lab`, Echo `.70` / `.100`, `4401_HMI_Server` / `ABQ4401FTV`, tag names from `reference/plc/*.L5X` or `Curia_ABQ/ACDs/*.L5X`.
 - Pair every new **lesson** with a **lab** when hands-on practice makes sense.
 - Number sequentially (`08`, `lab-08-…`). Update `README.md` tables.
 - Cross-link **Curia_ABQ** docs for operator flows and session-verified facts — not `Lab_Back_up`.
 
 ### Accuracy
 
-- Do not invent FT View menu paths, tag names, or routine names. Grep `Curia_ABQ/ACDs/*.L5X` or read `Curia_ABQ/docs/` first.
+- Do not invent FT View menu paths, tag names, or routine names. Grep `reference/plc/*.L5X`, `reference/hmi/*.xml`, or read `Curia_ABQ/docs/` first.
 - If the Steris lab differs from production, say **lab vs production** explicitly.
 
 ### Scope
@@ -47,7 +47,8 @@ This repo holds **explanations and lab steps**. The running lab, session logs, a
 | Operator cycle + report flow | `Curia_ABQ/docs/lab-cycle-simulation-and-report-process.md` |
 | Decon step-by-step | `Curia_ABQ/docs/lab-decon-cycle-stepthrough.md` |
 | Echo / network / PLC conversion | `Curia_ABQ/docs/lab-echo-ftv-session-2026-07.md` |
-| L5X for ladder study | `Curia_ABQ/ACDs/BX45183A_lab.L5X`, `GMP_Lab_lab.L5X` |
+| L5X for ladder study | `reference/plc/` (this repo) · `Curia_ABQ/ACDs/` |
+| HMI display XML | `reference/hmi/` (this repo) · `Curia_ABQ/DisplaysXMLs/` |
 | HMI / PDF / ActiveX session work | `Curia_ABQ/docs/lab-setup-plan.md`, `docs/ftview-vba-exports.md` |
 | Restore lab on new VMs (rare) | `Curia_ABQ/Lab_Back_up/LAB_SETUP_INSTRUCTIONS.txt` — **not** for routine lab work |
 

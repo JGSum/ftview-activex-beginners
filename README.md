@@ -15,8 +15,9 @@ Built from real troubleshooting on the **Curia ABQ Steris simulation lab** — D
 ## How to use
 
 1. Read lessons in order (`lessons/`).
-2. Do labs on a **non-production** VM or your lab machine (`labs/`).
-3. Optional: use the same production HMI RDP read-only checks from Lab 2–3.
+2. Do labs on the **non-production Steris lab VM** (`labs/`).
+3. Use `reference/` for offline L5X and display XML while reading — no need to switch repos.
+4. Optional: use the same production HMI RDP read-only checks from Lab 2–3.
 
 ## Lessons
 
@@ -41,6 +42,10 @@ Built from real troubleshooting on the **Curia ABQ Steris simulation lab** — D
 | [Lab 5](labs/lab-05-syswow64-fm20.md) | Fix “newer version required” — replace SysWOW64 FM20.DLL |
 | [Lab 6](labs/lab-06-build-your-own-alarm-handler.md) | Build a 3-alarm FOR-loop handler in Studio (Decon pattern) |
 | [Lab 7](labs/lab-07-trace-plc-print-pipeline.md) | Trace Decon/PW print handshake on Echo lab PLCs |
+
+## Reference files
+
+[`reference/`](reference/) — Steris lab **L5X** (both PLCs) and **HMI display XML** for study while reading lessons (e-sign, print_control, HEADER, PW print views). See [`reference/README.md`](reference/README.md).
 
 ## Related real-world docs
 
