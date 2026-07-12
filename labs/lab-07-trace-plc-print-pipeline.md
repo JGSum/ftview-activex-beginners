@@ -1,16 +1,16 @@
 # Lab 7 — Trace the PLC print pipeline on Echo
 
-**Goal:** Follow one report line from PLC logic to the HMI handshake, using the **Curia ABQ lab** already restored from `Lab_Back_up/`.
+**Goal:** Follow one report line from PLC logic to the HMI handshake on the **Curia ABQ Steris simulation lab**.
 
 **Time:** ~60–90 min (Decon path required; PW path optional second half).
 
 **Reference:** [Lesson 7 — PLC cycle report print pipeline](../lessons/07-plc-cycle-report-print-pipeline.md)
 
-**Prerequisites:** Lab built per `Curia_ABQ/Lab_Back_up/LAB_SETUP_INSTRUCTIONS.txt` — Echo PLCs at `.70` (Decon) and `.100` (PW), FT View client with hidden print displays.
+**Prerequisites:** Running Steris lab — Echo PLCs at `.70` (Decon) and `.100` (PW), FT View client with hidden print displays loaded.
 
 ---
 
-## Part A — Restore context (5 min)
+## Part A — Confirm lab context (5 min)
 
 Confirm you are on the **lab VM**, not production.
 
@@ -19,7 +19,7 @@ Confirm you are on the **lab VM**, not production.
 | Decon PLC | `BX45183A_lab` @ `192.168.100.70` |
 | PW PLC | `GMP_Lab_lab` @ `192.168.100.100` |
 | L5X exports (reference) | `Curia_ABQ/ACDs/BX45183A_lab.L5X`, `GMP_Lab_lab.L5X` |
-| HMI | `ABQ4401FTV.apb` restored — Decon + PW in one project |
+| HMI | `4401_HMI_Server` / `ABQ4401FTV` — Decon + PW clients |
 
 ---
 

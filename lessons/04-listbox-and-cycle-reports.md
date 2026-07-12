@@ -39,7 +39,7 @@ PW often stays on **`40 - CYCLE RUN MENU`** with “PRINTING NOT COMPLETETED” 
 
 PW PDF path is more manual (`80`/`81` Print Menu) or via `HEADER.PrintFile` — still uses a virtual printer string, separate from ListBox.
 
-**PLC detail:** [Lesson 7 — PLC cycle report print pipeline](07-plc-cycle-report-print-pipeline.md) walks `Print_main` (Decon) and `asPrintBuffer` / `FC60_PRINT` (PW) using the Curia ABQ lab L5X files.
+**PLC detail:** [Lesson 7 — PLC cycle report print pipeline](07-plc-cycle-report-print-pipeline.md) walks `Print_main` (Decon) and `asPrintBuffer` / `FC60_PRINT` (PW) using the Steris lab L5X files in Curia_ABQ.
 
 ## Check yourself
 

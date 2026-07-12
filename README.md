@@ -2,9 +2,9 @@
 
 Hands-on lessons from industrial HMI and PLC work — **ActiveX** / ListBox / CAB deployment, plus **Logix alarm FOR-loop** indirection.
 
-Built from real troubleshooting (Steris cycle reports, PDF printers, lab VM setup, Decon alarm tracing).
+Built from real troubleshooting on the **Curia ABQ Steris simulation lab** — Decon autoclave + Parts Washer on FactoryTalk Logix Echo, cycle reports, PDF printers, ActiveX, and alarm/print ladder logic.
 
-**Lab environment:** Use the restored **Curia ABQ** simulation kit: [Lab_Back_up](https://github.com/JGSum/Curia_ABQ/tree/main/Lab_Back_up) — ACDs, HMI backup, PDF24 MSI, FM20 CAB, `pdf_check_v1.8.exe`, and step-by-step VM setup (`LAB_SETUP_INSTRUCTIONS.txt`). Labs 1–7 are written against that machine.
+**Lab environment:** Do labs on the **running Steris lab** (FT View SE + Echo PLCs). System details and L5X exports live in [Curia_ABQ](https://github.com/JGSum/Curia_ABQ) (`docs/`, `ACDs/`). That repo also holds `Lab_Back_up/` for **disaster recovery only** — not required to study or run these exercises.
 
 ## Who this is for
 
@@ -44,9 +44,7 @@ Built from real troubleshooting (Steris cycle reports, PDF printers, lab VM setu
 
 ## Related real-world docs
 
-**Lab kit:** [Curia_ABQ/Lab_Back_up](https://github.com/JGSum/Curia_ABQ/tree/main/Lab_Back_up) — restore VMs from scratch, then run Labs 1–7.
-
-**Session docs:** `Curia_ABQ/docs/lab-setup-plan.md`, `docs/lab-decon-cycle-stepthrough.md`, `docs/lab-cycle-simulation-and-report-process.md`, `docs/plc-changes-lab-only.md`.
+**Steris lab (running system):** [Curia_ABQ](https://github.com/JGSum/Curia_ABQ) — `docs/lab-cycle-simulation-and-report-process.md`, `docs/lab-decon-cycle-stepthrough.md`, `docs/lab-echo-ftv-session-2026-07.md`, `docs/plc-changes-lab-only.md`, and `ACDs/*.L5X` for ladder reference.
 
 ## License
 

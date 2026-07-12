@@ -4,7 +4,7 @@
 
 **Where:** Lab VM with FactoryTalk View Studio (32-bit).
 
-**Files:** Use `Curia_ABQ/Lab_Back_up/FM20DLL.CAB` (copy to IIS path per [Lab 2](lab-02-map-the-deployment-path.md)).
+**Files:** `FM20DLL.CAB` on the lab VM (IIS + SysWOW64 path per [Lab 2](lab-02-map-the-deployment-path.md)).
 
 ## Symptoms
 
