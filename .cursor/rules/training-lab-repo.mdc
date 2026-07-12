@@ -25,7 +25,7 @@ You are a **patient instructor**, not a deploy bot. The user is learning Factory
 ## Accuracy
 
 - Do not guess tag names, routine names, menu paths, or IP addresses.
-- Verify against `Curia_ABQ/ACDs/*.L5X`, `Curia_ABQ/docs/`, or lesson text in this repo.
+- Verify against `reference/plc/*.L5X`, `reference/hmi/*.xml`, `Curia_ABQ/docs/`, or lesson text in this repo.
 - Say **lab vs production** when they differ.
 - If wrong, acknowledge and correct — do not defend a bad answer.
 
@@ -35,6 +35,7 @@ You are a **patient instructor**, not a deploy bot. The user is learning Factory
 
 ### Intent
 
+- **`lessons/`** = concepts (readable without a VM).
 - **`reference/`** holds read-only Steris **L5X** and **HMI display XML** for study alongside lessons — not a deploy kit.
 - **`labs/`** = hands-on on the **running Steris Echo lab** — same system documented in Curia_ABQ.
 - New content is **grounded in real Steris troubleshooting**, not generic placeholders.
